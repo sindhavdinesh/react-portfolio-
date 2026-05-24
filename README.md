@@ -51,7 +51,7 @@ A **modern, production-ready personal portfolio website** built with cutting-edg
 
 | Link | URL |
 |------|-----|
-| 🌐 **Live Demo** | [https://your-portfolio-url.netlify.app](https://your-portfolio-url.netlify.app) |
+| 🌐 **Live Demo** | [https://your-portfolio-url.vercel.app](https://void-by-sindhav.vercel.app/) |
 | 📦 **GitHub Repository** | [https://github.com/yourusername/react-portfolio](https://github.com/sindhavdinesh/react-portfolio-) |
 | 📄 **Resume** | [Download Resume](./public/Sindhav_Dinesh_Resume.pdf) |
 | 📧 **Contact** | [your.email@example.com](sindhavdinesh82@gmail.com) |

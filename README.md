@@ -21,7 +21,7 @@
   
 | Home Page | Projects Page | About Page |
 |-----------|---------------|------------|
-| ![Home](./public/portfolio.png) | ![Projects](./dist/images/projects/dashboard.png) | ![About](./dist/images/about/about-portrait.png) |
+| ![Home](./public/portfolio.png) | ![Projects](./projects/dashboard.png) | ![About](./about-portrait.png) |
 
 | Skills Cloud | Gallery | Contact |
 |--------------|---------|---------|
@@ -52,9 +52,9 @@ A **modern, production-ready personal portfolio website** built with cutting-edg
 | Link | URL |
 |------|-----|
 | 🌐 **Live Demo** | [https://your-portfolio-url.netlify.app](https://your-portfolio-url.netlify.app) |
-| 📦 **GitHub Repository** | [https://github.com/yourusername/react-portfolio](https://github.com/yourusername/react-portfolio) |
+| 📦 **GitHub Repository** | [https://github.com/yourusername/react-portfolio](https://github.com/sindhavdinesh/react-portfolio-) |
 | 📄 **Resume** | [Download Resume](./public/Sindhav_Dinesh_Resume.pdf) |
-| 📧 **Contact** | [your.email@example.com](mailto:your.email@example.com) |
+| 📧 **Contact** | [your.email@example.com](sindhavdinesh82@gmail.com) |
 
 ---
 

@@ -1,0 +1,127 @@
+.section {
+  padding: 6rem 1.25rem 4rem;
+  min-height: 100vh;
+  background: var(--skills-bg);
+  color: var(--text-primary);
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  background: linear-gradient(135deg, #00f3ff, #7ee8fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+}
+
+.arena {
+  position: relative;
+  width: 100%;
+  min-height: clamp(420px, 62vw, 580px);
+  margin: 0 auto;
+}
+
+.bubble {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+
+.ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--skills-bubble-bg);
+  border: 1px solid var(--skills-bubble-border);
+  box-shadow:
+    0 0 20px rgba(0, 243, 255, 0.15),
+    0 0 40px rgba(0, 180, 200, 0.08),
+    inset 0 0 24px rgba(0, 243, 255, 0.04);
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.bubble:hover .ring {
+  border-color: rgba(0, 243, 255, 0.65);
+  box-shadow:
+    0 0 28px rgba(0, 243, 255, 0.28),
+    0 0 56px rgba(0, 180, 200, 0.12),
+    inset 0 0 28px rgba(0, 243, 255, 0.08);
+  transform: scale(1.06);
+}
+
+.sizeSm .ring {
+  width: clamp(64px, 11vw, 78px);
+  height: clamp(64px, 11vw, 78px);
+}
+
+.sizeMd .ring {
+  width: clamp(76px, 13vw, 92px);
+  height: clamp(76px, 13vw, 92px);
+}
+
+.sizeLg .ring {
+  width: clamp(88px, 15vw, 108px);
+  height: clamp(88px, 15vw, 108px);
+}
+
+.icon {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1;
+}
+
+.label {
+  font-size: clamp(0.65rem, 1.8vw, 0.8rem);
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  text-shadow: 0 0 12px rgba(0, 243, 255, 0.2);
+}
+
+/* Mobile: compact grid fallback */
+@media (max-width: 640px) {
+  .arena {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 0.75rem;
+    min-height: unset;
+    padding: 0.5rem 0;
+  }
+
+  .bubble {
+    position: static;
+    transform: none;
+  }
+
+  .sizeSm .ring,
+  .sizeMd .ring,
+  .sizeLg .ring {
+    width: 72px;
+    height: 72px;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+  }
+}

@@ -21,7 +21,8 @@ const App: React.FC = () => {
                 <Route path="/about" element={<Navigate to="/#about" replace />} />
                 <Route path="/projects" element={<Navigate to="/#projects" replace />} />
                 <Route path="/skills" element={<Navigate to="/#skills" replace />} />
-                <Route path="/gallery" element={<Navigate to="/#gallery" replace />} />
+                <Route path="/gallery" element={<Navigate to="/#certificates" replace />} />
+                <Route path="/certificates" element={<Navigate to="/#certificates" replace />} />
                 <Route path="/contact" element={<Navigate to="/#contact" replace />} />
               </Routes>
             </main>

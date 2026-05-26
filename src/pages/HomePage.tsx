@@ -5,11 +5,12 @@ import Hero from '../components/home/Hero/Hero';
 import About from '../components/about/About';
 import ProjectsPage from './ProjectsPage';
 import SkillsCloud from '../components/skills/SkillsCloud';
-import MediaLibrary from '../components/media/MediaLibrary';
+
+import Certificates from '../components/certificates/Certificates';
 import ContactPage from './ContactPage';
 import styles from './HomePage.module.css';
 
-const SECTION_IDS = ['home', 'about', 'projects', 'skills', 'gallery', 'contact'] as const;
+const SECTION_IDS = ['home', 'about', 'projects', 'skills', 'certificates', 'contact'] as const;
 
 const HomePage: React.FC = () => {
   const location = useLocation();
@@ -43,8 +44,8 @@ const HomePage: React.FC = () => {
         <SkillsCloud />
       </section>
 
-      <section id="gallery" className={styles.section} aria-label="Gallery">
-        <MediaLibrary />
+      <section id="certificates" className={styles.section} aria-label="Certificates">
+        <Certificates />
       </section>
 
       <section id="contact" className={styles.section} aria-label="Contact">

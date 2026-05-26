@@ -1,21 +1,52 @@
+/* src/components/projects/ProjectCard.module.css */
+
+/* ===== CARD ===== */
 .card {
-  background: var(--bg-elevated);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid var(--border);
-  transition: border-color 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.35s, box-shadow 0.35s;
+  backdrop-filter: blur(8px);
 }
 
 .card:hover {
-  border-color: rgba(0, 243, 255, 0.35);
-  box-shadow: 0 16px 40px rgba(0, 243, 255, 0.1);
+  border-color: rgba(229, 62, 62, 0.35);
+  box-shadow:
+    0 20px 60px rgba(229, 62, 62, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* ===== FEATURED BADGE ===== */
+.featuredBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
+}
+
+/* ===== IMAGE ===== */
 .imageWrap {
   position: relative;
-  height: clamp(200px, 28vw, 250px);
+  height: clamp(180px, 24vw, 230px);
   overflow: hidden;
-  background: var(--bg-card);
+  background: #0a0a0a;
+  flex-shrink: 0;
 }
 
 .image {
@@ -23,11 +54,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.55s ease;
 }
 
-.imageZoom {
-  transform: scale(1.08);
+.card:hover .image {
+  transform: scale(1.07);
 }
 
 .imageFallback {
@@ -36,100 +67,163 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0b0d1f, #1a1b4b);
+  background: linear-gradient(135deg, #111, #1a1a2e);
   font-size: 4rem;
   font-weight: 800;
-  color: #00f3ff;
+  color: #e53e3e;
 }
 
+/* Overlay — shows category on hover */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    transparent 55%
+  );
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 1rem;
+  align-items: flex-end;
+  padding: 14px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.35s;
 }
 
-.overlayVisible {
+.card:hover .overlay {
   opacity: 1;
 }
 
-.btnPrimary {
-  padding: 0.75rem 1.35rem;
-  background: linear-gradient(135deg, #00f3ff, #7000ff);
-  border-radius: 50px;
-  color: white;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: transform 0.2s;
+.categoryTag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(229, 62, 62, 0.25);
+  border: 1px solid rgba(229, 62, 62, 0.45);
+  color: #fca5a5;
+  backdrop-filter: blur(4px);
 }
 
-.btnPrimary:hover {
-  transform: translateY(-2px);
-}
-
-.btnOutline {
-  padding: 0.75rem 1.35rem;
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 50px;
-  color: white;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  transition: transform 0.2s, background 0.2s;
-}
-
-.btnOutline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
-
+/* ===== BODY ===== */
 .body {
-  padding: 1.5rem;
+  padding: 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
 }
 
 .title {
-  font-size: clamp(1.1rem, 3vw, 1.3rem);
-  margin: 0 0 0.5rem;
-  color: var(--text-primary);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 800;
+  margin: 0;
+  color: var(--color-text, #fff);
+  line-height: 1.3;
 }
 
 .desc {
-  color: var(--text-muted);
-  margin: 0 0 1rem;
-  line-height: 1.55;
-  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  flex: 1;
 }
 
+/* ===== TECH TAGS ===== */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 6px;
 }
 
 .tag {
-  padding: 0.3rem 0.75rem;
-  background: rgba(0, 243, 255, 0.1);
-  border-radius: 50px;
-  font-size: 0.78rem;
-  color: #00f3ff;
+  padding: 3px 10px;
+  background: rgba(229, 62, 62, 0.1);
+  border: 1px solid rgba(229, 62, 62, 0.2);
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fca5a5;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
-[data-theme='light'] .tag {
-  color: #006d87;
-  background: rgba(0, 120, 150, 0.1);
+/* ===== BUTTON ROW ===== */
+.btnRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* shared button base */
+.btnGithub,
+.btnLive,
+.btnDisabled {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+/* GitHub button — dark with white border */
+.btnGithub {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.btnGithub:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Live Demo button — red gradient */
+.btnLive {
+  background: linear-gradient(135deg, #e53e3e, #d53f8c);
+  border: 1px solid transparent;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(229, 62, 62, 0.3);
+}
+
+.btnLive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(229, 62, 62, 0.5);
+  filter: brightness(1.1);
+  color: #fff;
+}
+
+/* Disabled / Coming soon */
+.btnDisabled {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.25);
+  cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .btnRow {
+    flex-direction: column;
+  }
+
+  .body {
+    padding: 16px;
+  }
 }

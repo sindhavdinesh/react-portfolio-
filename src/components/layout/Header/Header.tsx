@@ -15,19 +15,12 @@ import '../Header.css';
 
 
 const navItems = [
-
-  { id: 'home', label: 'Home' },
-
-  { id: 'about', label: 'About' },
-
-  { id: 'projects', label: 'Projects' },
-
-  { id: 'skills', label: 'Skills' },
-
-  { id: 'gallery', label: 'Gallery' },
-
-  { id: 'contact', label: 'Contact' },
-
+  { id: 'home',         label: 'Home'         },
+  { id: 'about',        label: 'About'        },
+  { id: 'projects',     label: 'Projects'     },
+  { id: 'skills',       label: 'Skills'       },
+  { id: 'certificates', label: 'Certificates' },
+  { id: 'contact',      label: 'Contact'      },
 ] as const;
 
 

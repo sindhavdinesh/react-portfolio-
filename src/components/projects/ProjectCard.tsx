@@ -1,7 +1,7 @@
 // src/components/projects/ProjectCard.tsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
 import type { Project } from '../../types';
 import styles from './ProjectCard.module.css';
 
@@ -10,32 +10,37 @@ interface ProjectCardProps {
   index: number;
 }
 
-const isValidLink = (url?: string) => Boolean(url && url !== '#');
+const isValidLink = (url?: string) => Boolean(url && url !== '#' && url.trim() !== '');
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const [imgError, setImgError] = useState(false);
 
-  const showDemo = isValidLink(project.liveDemo);
+  const showDemo   = isValidLink(project.liveDemo);
   const showGithub = isValidLink(project.github);
 
   return (
     <motion.article
       className={styles.card}
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 36 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.08 }}
-      whileHover={{ y: -8 }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      transition={{ delay: index * 0.08, duration: 0.5, ease: 'easeOut' }}
+      whileHover={{ y: -10 }}
     >
+      {/* Featured badge */}
+      {project.featured && (
+        <div className={styles.featuredBadge}>
+          <FaStar /> Featured
+        </div>
+      )}
+
+      {/* Image */}
       <div className={styles.imageWrap}>
         {!imgError ? (
           <img
             src={project.image}
             alt={project.title}
-            className={`${styles.image} ${isHovered ? styles.imageZoom : ''}`}
+            className={styles.image}
             loading="lazy"
             onError={() => setImgError(true)}
           />
@@ -45,39 +50,61 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           </div>
         )}
 
-        <div className={`${styles.overlay} ${isHovered ? styles.overlayVisible : ''}`}>
-          {showGithub && (
+        {/* Hover overlay — category tag */}
+        <div className={styles.overlay}>
+          <span className={styles.categoryTag}>{project.category}</span>
+        </div>
+      </div>
+
+      {/* Body */}
+      <div className={styles.body}>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles.desc}>{project.description}</p>
+
+        {/* Tech tags */}
+        <div className={styles.tags}>
+          {project.tech.map((tech) => (
+            <span key={tech} className={styles.tag}>{tech}</span>
+          ))}
+        </div>
+
+        {/* ── Buttons row ── */}
+        <div className={styles.btnRow}>
+          {showGithub ? (
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.btnPrimary}
+              className={styles.btnGithub}
+              aria-label={`GitHub — ${project.title}`}
             >
-              <FaGithub /> Code
+              <FaGithub />
+              <span>GitHub</span>
             </a>
+          ) : (
+            <span className={styles.btnDisabled} title="Coming soon">
+              <FaGithub />
+              <span>GitHub</span>
+            </span>
           )}
-          {showDemo && (
+
+          {showDemo ? (
             <a
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.btnOutline}
+              className={styles.btnLive}
+              aria-label={`Live Demo — ${project.title}`}
             >
-              <FaExternalLinkAlt /> Live Demo
+              <FaExternalLinkAlt />
+              <span>Live Demo</span>
             </a>
-          )}
-        </div>
-      </div>
-
-      <div className={styles.body}>
-        <h3 className={styles.title}>{project.title}</h3>
-        <p className={styles.desc}>{project.description}</p>
-        <div className={styles.tags}>
-          {project.tech.map((tech) => (
-            <span key={tech} className={styles.tag}>
-              {tech}
+          ) : (
+            <span className={styles.btnDisabled} title="Coming soon">
+              <FaExternalLinkAlt />
+              <span>Coming Soon</span>
             </span>
-          ))}
+          )}
         </div>
       </div>
     </motion.article>

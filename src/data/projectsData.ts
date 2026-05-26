@@ -1,5 +1,5 @@
 // src/data/projectsData.ts
-// Update github, liveDemo & image (.png screenshots) when ready
+// GitHub links already set | liveDemo = '#' means Coming Soon (grey button)
 import type { Project } from '../types';
 
 export const projectsData: Project[] = [
@@ -10,9 +10,9 @@ export const projectsData: Project[] = [
     longDescription:
       'A full-featured Netflix clone with user authentication, video streaming, personalized recommendations, watchlist, and admin dashboard.',
     image: '/images/projects/flixvault.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/FlixVault',
-    liveDemo: '#',
+    liveDemo: 'https://flixvault-net-clone.netlify.app/',
     category: 'fullstack',
     featured: true,
     date: '2026',
@@ -24,9 +24,9 @@ export const projectsData: Project[] = [
     longDescription:
       'Modern e-commerce platform with product filtering, cart management, Stripe integration, and admin dashboard.',
     image: '/images/projects/ecommerce.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/e-commerce%20product%20page',
-    liveDemo: '#',
+    liveDemo: 'https://ecommerce-platform-app.netlify.app/',
     category: 'fullstack',
     featured: true,
     date: '2026',
@@ -37,9 +37,9 @@ export const projectsData: Project[] = [
     description: 'Real-time weather forecasting with 5-day prediction',
     longDescription: 'Weather application with real-time data, 5-day forecast, and interactive charts.',
     image: '/images/projects/weather.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/Wheather%20App',
-    liveDemo: '#',
+    liveDemo: 'https://wheather-app-project-linkdin.netlify.app/',
     category: 'frontend',
     featured: false,
     date: '2026',
@@ -50,9 +50,9 @@ export const projectsData: Project[] = [
     description: 'Interactive quiz with scoring and timer functionality',
     longDescription: 'Engaging quiz platform with multiple categories, timer, score tracking, and leaderboard.',
     image: '/images/projects/quiz.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/Quiz%20App',
-    liveDemo: '#',
+    liveDemo: 'https://quiz-app-livein.netlify.app/',
     category: 'frontend',
     featured: false,
     date: '2026',
@@ -63,9 +63,9 @@ export const projectsData: Project[] = [
     description: 'Analytics dashboard with charts and data visualization',
     longDescription: 'Modern admin dashboard with analytics, user management, and data visualization.',
     image: '/images/projects/dashboard.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/Dashboard%20UI',
-    liveDemo: '#',
+    liveDemo: 'https://dashboard-project-ui.netlify.app/',
     category: 'frontend',
     featured: true,
     date: '2026',
@@ -77,9 +77,9 @@ export const projectsData: Project[] = [
     longDescription:
       'Advanced task management with drag-drop functionality, categories, due dates, and local storage persistence.',
     image: '/images/projects/todo.png',
-    tech: ['Html', 'Css', 'javascript'],
+    tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/sindhavdinesh/linkdin-project/tree/main/To-do-advance%20App',
-    liveDemo: '#',
+    liveDemo: 'https://todo-advance-application.netlify.app/',
     category: 'frontend',
     featured: false,
     date: '2026',
@@ -87,8 +87,8 @@ export const projectsData: Project[] = [
 ];
 
 export const projectCategories = [
-  { id: 'all', label: 'All Projects' },
-  { id: 'frontend', label: 'Frontend' },
-  { id: 'fullstack', label: 'Full Stack' },
-  { id: 'featured', label: 'Featured' },
+  { id: 'all',      label: 'All Projects' },
+  { id: 'frontend', label: 'Frontend'     },
+  { id: 'fullstack',label: 'Full Stack'   },
+  { id: 'featured', label: '⭐ Featured'  },
 ];

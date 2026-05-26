@@ -177,6 +177,7 @@ const SkillsCloud: React.FC = () => {
             className={styles.arena}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
+            style={{ position: 'relative' }}
           >
             {/* Animated dot-grid background layer */}
             <div className={styles.arenaDots} />

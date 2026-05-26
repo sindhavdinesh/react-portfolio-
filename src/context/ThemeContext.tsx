@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // src/context/ThemeContext.tsx
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import type { ThemeContextType, ThemeProviderProps } from '../types/context';

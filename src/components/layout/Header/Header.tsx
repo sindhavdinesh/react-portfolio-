@@ -52,9 +52,8 @@ const Header: React.FC = () => {
 
 
   useEffect(() => {
-
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMenuOpen(false);
-
   }, [location.pathname, location.hash]);
 
 
@@ -82,9 +81,8 @@ const Header: React.FC = () => {
     const hash = location.hash.replace('#', '');
 
     if (hash && navItems.some((item) => item.id === hash)) {
-
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setActiveSection(hash);
-
     }
 
   }, [location.pathname, location.hash]);

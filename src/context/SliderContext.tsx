@@ -1,4 +1,5 @@
 // src/context/SliderContext.tsx
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useState, useContext } from 'react';
 import type { SliderContextType, SliderProviderProps } from '../types/context';
 

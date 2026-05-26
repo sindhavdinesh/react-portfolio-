@@ -83,13 +83,22 @@ const Certificates: React.FC = () => {
 
   const open = (cert: Certificate) => {
     setSelected(cert);
-    document.body.style.overflow = 'hidden';
   };
 
   const close = () => {
     setSelected(null);
-    document.body.style.overflow = '';
   };
+
+  React.useEffect(() => {
+    if (selected) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selected]);
 
   return (
     <section className={styles.section} id="certificates">

@@ -1,6 +1,6 @@
 // src/components/certificates/Certificates.tsx
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { FaTimes, FaExpand, FaAward, FaBriefcase, FaCloud, FaGraduationCap } from 'react-icons/fa';
 import styles from './Certificates.module.css';
 
@@ -65,7 +65,7 @@ const badgeIcons = {
   academic: <FaGraduationCap />,
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -73,9 +73,9 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 };
 
 const Certificates: React.FC = () => {

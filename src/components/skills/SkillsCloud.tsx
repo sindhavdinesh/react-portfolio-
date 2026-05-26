@@ -1,7 +1,6 @@
 // src/components/skills/SkillsCloud.tsx
 import React, { useState, useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import {
   FaHtml5, FaCss3Alt, FaJs, FaPython, FaGit, FaGithub,
   FaNodeJs, FaReact, FaBootstrap, FaPaintBrush, FaPhotoVideo,
@@ -70,14 +69,14 @@ const subtitleLines = [
   'Engineering Digital Experiences',
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden:  {},
   visible: { transition: { staggerChildren: 0.06 } },
 };
 
-const rowVariants = {
+const rowVariants: Variants = {
   hidden:  { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 };
 
 const SkillsCloud: React.FC = () => {

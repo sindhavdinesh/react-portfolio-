@@ -1,381 +1,290 @@
-# 🚀 React Portfolio - Dinesh Sindhav
-
-[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![GSAP](https://img.shields.io/badge/GSAP-3.12-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?logo=netlify&logoColor=white)](https://netlify.com)
-
 <div align="center">
-  
-## ✨ [Live Demo](https://your-portfolio-url.netlify.app) ✨ | 📦 [GitHub Repo](https://github.com/yourusername/react-portfolio) 📦
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Sindhav%20Dinesh&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Full%20Stack%20Developer%20Portfolio&descAlignY=55&descSize=18" width="100%" />
+
+# ⚡ React Portfolio — Sindhav Dinesh
+
+**`Full Stack Developer | UI/UX Enthusiast | Code. Create. Innovate.`**
+
+<br/>
+
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.4-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+
+<br/>
+
+### 🌐 [**View Live Portfolio**](https://void-by-sindhav.vercel.app/) &nbsp;•&nbsp; 📦 [**GitHub Repo**](https://github.com/sindhavdinesh/react-portfolio-)
+
+<br/>
 
 </div>
 
 ---
 
-## 📸 Screenshots
+## 📸 Preview
 
 <div align="center">
-  
-| Home Page | Projects Page | About Page |
-|-----------|---------------|------------|
-| ![Home](./public/portfolio.png) | ![Projects](./projects/dashboard.png) | ![About](./about-portrait.png) |
 
-| Skills Cloud | Gallery | Contact |
-|--------------|---------|---------|
-| ![Skills](./public/media/coding-setup.jpg) | ![Gallery](./public/media/Event.jpeg) | ![Contact](./public/media/Team%20Event.jpeg) |
+> **A premium, production-ready personal portfolio** with stunning animations, dark/light mode, and fully responsive design.
 
 </div>
 
 ---
 
-## 🎯 Overview
+## 🎯 About This Project
 
-A **modern, production-ready personal portfolio website** built with cutting-edge web technologies. This portfolio showcases professional experience, projects, skills, and creative work with stunning animations and a fully responsive design.
+This is my **personal developer portfolio** — built from scratch with modern web technologies to showcase my skills, projects, and certificates. Every pixel is crafted with attention to design, performance, and user experience.
 
-### 🌟 Key Highlights
-
-- ⚡ **Lightning Fast** - Built with Vite for instant hot reloading
-- 🎨 **Beautiful Animations** - GSAP powered smooth transitions
-- 🌓 **Dark/Light Mode** - Automatic theme switching with persistence
-- 📱 **Fully Responsive** - Perfect on all devices (mobile, tablet, desktop)
-- 🔍 **SEO Optimized** - Meta tags and semantic HTML
-- ♿ **Accessibility** - WCAG compliant components
-- 🚀 **Production Ready** - Optimized build with code splitting
+> *"Turning ideas into reality, one component at a time."*
 
 ---
 
-## 🔗 Quick Links
+## ✨ Features
 
-| Link | URL |
-|------|-----|
-| 🌐 **Live Demo** | [https://your-portfolio-url.vercel.app](https://void-by-sindhav.vercel.app/) |
-| 📦 **GitHub Repository** | [https://github.com/yourusername/react-portfolio](https://github.com/sindhavdinesh/react-portfolio-) |
-| 📄 **Resume** | [Download Resume](./public/Sindhav_Dinesh_Resume.pdf) |
-| 📧 **Contact** | [your.email@example.com](sindhavdinesh82@gmail.com) |
+<table>
+<tr>
+<td width="50%">
 
----
-
-## ✨ Features Breakdown
-
-### 🏠 Home Page
-- Hero section with animated typing effect
-- Interactive skill orbit (3D rotating skills)
-- Statistics counter (projects, experience, clients)
-- Call-to-action buttons
+### 🏠 Hero Section
+- Animated typing effect with role titles
+- Smooth entrance animations
+- Download Resume & Contact CTA buttons
+- Social links (GitHub, LinkedIn, Twitter, Instagram)
 
 ### 👤 About Page
-- Personal bio and introduction
-- Vertical timeline (education & work experience)
+- Personal bio & introduction
+- Vertical timeline (education & experience)
 - Creative companions section
-- Skills proficiency bars
+- Framer Motion scroll animations
 
 ### 🖼️ Projects Showcase
-- Filterable project grid (All, React, FullStack, etc.)
-- Project cards with images, tech stack, links
-- Live demo and GitHub code buttons
-- Responsive masonry layout
+- Filterable grid (All, Frontend, Full Stack, Featured)
+- Cards with **GitHub** + **Live Demo** buttons — always visible
+- Image zoom on hover + featured badge
+- 6 real projects with actual GitHub links
+
+</td>
+<td width="50%">
 
 ### 🛠️ Skills Section
-- Interactive 3D skills cloud
-- Skill cards with proficiency levels
-- Technology icons with hover effects
-- Category filtering (Frontend, Backend, Tools)
+- **17 skills** in a 2-column side-by-side grid
+- Animated progress bars with glowing tip dot
+- Color-coded category badges (Frontend, Styling, Backend, Language, Tools, Creative)
+- Rotating subtitle — 10 premium lines cycling every 2.5s
+- Shimmer gradient text animation
 
-### 🎨 Media Gallery
-- Photo gallery with lightbox
-- Video gallery with playback
-- Categorized media (Personal, Waterpark, Events)
-- Lazy loading for performance
+### 🏆 Certificates Section
+- 4 real certificates with actual images
+- Lightbox viewer on click
+- Competition, Professional, Cloud & Academic badges
+- Framer Motion stagger animations
 
-### 📬 Contact Form
-- Form validation with error messages
-- Email integration (Formspree/EmailJS)
+### 📬 Contact Page
+- Fully functional contact form
+- Email integration
 - Social media links
-- Map integration (optional)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🛠️ Tech Stack Details
+## 🛠️ Tech Stack
 
-| Category | Technology | Version | Purpose |
-|----------|------------|---------|---------|
-| **Frontend Framework** | React | 18.3.1 | UI Library |
-| **Language** | TypeScript | 5.5.3 | Type Safety |
-| **Build Tool** | Vite | 5.4.0 | Fast Development |
-| **Animations** | GSAP | 3.12.5 | Scroll & Page Animations |
-| **Routing** | React Router DOM | 6.26.0 | Navigation |
-| **Styling** | CSS Modules | - | Scoped Styling |
-| **Icons** | React Icons | 5.3.0 | Icon Library |
-| **Form Handling** | React Hook Form | 7.53.0 | Form Management |
-| **Email Service** | EmailJS | 3.11.0 | Contact Form |
-| **Linting** | ESLint | 9.9.0 | Code Quality |
-| **Formatting** | Prettier | 3.3.3 | Code Style |
+<div align="center">
+
+| Category | Technology | Version |
+|---|---|---|
+| ⚛️ **UI Library** | React | `19.2.6` |
+| 🔷 **Language** | TypeScript | `6.0.2` |
+| ⚡ **Build Tool** | Vite | `8.0.12` |
+| 🎞️ **Animations** | Framer Motion | `12.40.0` |
+| 🌿 **Scroll FX** | GSAP | `3.15.0` |
+| 🔀 **Routing** | React Router DOM | `7.15.1` |
+| 🎨 **Styling** | CSS Modules (Vanilla CSS) | — |
+| 🖼️ **Icons** | React Icons | `5.6.0` |
+| ✍️ **Typing FX** | React Type Animation | `3.2.0` |
+| 🚀 **Deployment** | Vercel | — |
+
+</div>
 
 ---
 
-## 📁 Complete Project Structure
+## 📁 Project Structure
+
+```
 react-portfolio/
 ├── public/
-│ ├── media/
-│ │ ├── photos/
-│ │ │ ├── personal/
-│ │ │ │ ├── personal-1.png
-│ │ │ │ ├── personal-2.png
-│ │ │ │ ├── personal-3.png
-│ │ │ │ ├── personal-4.png
-│ │ │ │ ├── personal-5.png
-│ │ │ │ └── personal-7.png
-│ │ │ ├── waterpark/
-│ │ │ │ ├── waterpark-1.png
-│ │ │ │ ├── waterpark-2.png
-│ │ │ │ ├── waterpark-3.png
-│ │ │ │ ├── waterpark-4.png
-│ │ │ │ └── waterpark-5.png
-│ │ │ ├── .gitkeep
-│ │ │ ├── clg time.jpeg
-│ │ │ ├── coding-setup.jpg
-│ │ │ ├── Event.jpeg
-│ │ │ ├── graduation.jpg
-│ │ │ ├── img 1.jpeg
-│ │ │ ├── img 2.jpeg
-│ │ │ ├── img 3.jpeg
-│ │ │ ├── img 4.jpeg
-│ │ │ ├── img 5.jpeg
-│ │ │ ├── img 6.jpeg
-│ │ │ ├── profile.jpeg
-│ │ │ └── project-demo-poster.png
-│ │ ├── videos/
-│ │ │ ├── .gitkeep
-│ │ │ └── School achievement.mp4
-│ │ ├── README.txt
-│ │ ├── portfolio.png
-│ │ ├── README-images.txt
-│ │ └── Sindhav_Dinesh_Resume.pdf
-│ │
+│   ├── images/
+│   │   ├── certificates/          # Certificate images
+│   │   │   ├── cert-redwhite.jpeg
+│   │   │   ├── cert-forage-jpmorgan.jpeg
+│   │   │   ├── cert-aws-forage.jpeg
+│   │   │   └── cert-hsc.jpeg
+│   │   └── projects/              # Project screenshots
+│   │       ├── flixvault.png
+│   │       ├── ecommerce.png
+│   │       ├── weather.png
+│   │       ├── quiz.png
+│   │       ├── dashboard.png
+│   │       └── todo.png
+│   └── Sindhav_Dinesh_Resume.pdf
+│
 ├── src/
-│ ├── animations/
-│ │ ├── fade.ts
-│ │ └── triggerfade.ts
-│ │
-│ ├── assets/
-│ │ ├── images/
-│ │ │ ├── background/
-│ │ │ ├── profile/
-│ │ │ ├── projects/
-│ │ │ ├── skills/
-│ │ │ └── videos/
-│ │
-│ ├── components/
-│ │ ├── about/
-│ │ │ ├── About.module.css
-│ │ │ ├── About.tsx
-│ │ │ ├── AboutHero.module.css
-│ │ │ ├── AboutHeroText.tsx
-│ │ │ ├── AboutLayout.module.css
-│ │ │ ├── CreativeCompanions.module.css
-│ │ │ ├── CreativeCompanion.tsx
-│ │ │ ├── MyDescription.tsx
-│ │ │ └── VerticalTimeline.tsx
-│ │ │
-│ │ ├── common/
-│ │ │ ├── Button/
-│ │ │ ├── Button.tsx
-│ │ │ ├── ButtonOutline.tsx
-│ │ │ ├── Card/
-│ │ │ ├── Heading/
-│ │ │ ├── Heading.tsx
-│ │ │ └── SubHeading.tsx
-│ │ │
-│ │ ├── contact/
-│ │ │ └── Contact.tsx
-│ │ │
-│ │ ├── home/
-│ │ │ ├── Hero/
-│ │ │ ├── Hero.module.css
-│ │ │ ├── Hero.tsx
-│ │ │ ├── SkillOrbit.tsx
-│ │ │ ├── Stats/
-│ │ │ │ ├── StatCard.tsx
-│ │ │ │ ├── Stats.module.css
-│ │ │ │ └── Stats.tsx
-│ │ │ └── assets.tsx
-│ │ │
-│ │ ├── input/
-│ │ │ ├── Input.tsx
-│ │ │ └── Textarea.tsx
-│ │ │
-│ │ ├── layout/
-│ │ │ ├── Footer/
-│ │ │ │ ├── Footer.module.css
-│ │ │ │ └── Footer.tsx
-│ │ │ ├── Header/
-│ │ │ │ ├── Header.module.css
-│ │ │ │ └── Header.tsx
-│ │ │ ├── Layout.tsx
-│ │ │ ├── MobileMenu.tsx
-│ │ │ └── Navbar.tsx
-│ │ │
-│ │ ├── Loader/
-│ │ │ ├── ButtonLoader.css
-│ │ │ ├── ButtonLoader.tsx
-│ │ │ ├── CSSLoader.css
-│ │ │ ├── CSSLoader.tsx
-│ │ │ ├── Loader.css
-│ │ │ ├── Loader.tsx
-│ │ │ ├── SkeletonLoader.css
-│ │ │ └── SkeletonLoader.tsx
-│ │ │
-│ │ ├── media/
-│ │ │ ├── MediaCard.tsx
-│ │ │ ├── MediaLibrary.module.css
-│ │ │ └── MediaLibrary.tsx
-│ │ │
-│ │ ├── projects/
-│ │ │ ├── ProjectCard.module.css
-│ │ │ ├── ProjectCard.tsx
-│ │ │ ├── ProjectFilter.tsx
-│ │ │ ├── Projects.module.css
-│ │ │ └── Projects.tsx
-│ │ │
-│ │ ├── skills/
-│ │ │ ├── SkillCard.tsx
-│ │ │ ├── Skills.tsx
-│ │ │ ├── SkillsCloud.module.css
-│ │ │ └── SkillsCloud.tsx
-│ │ │
-│ │ ├── ThemeToggle/
-│ │ │ ├── ThemeToggle.module.css
-│ │ │ └── ThemeToggle.tsx
-│ │ │
-│ │ └── transitions/
-│ │ ├── ChildTransition.tsx
-│ │ └── SliderTransition.tsx
-│ │
-│ ├── context/
-│ │ ├── slider.ts
-│ │ ├── SliderContext.tsx
-│ │ └── ThemeContext.tsx
-│ │
-│ ├── data/
-│ │ ├── data.ts
-│ │ ├── experienceData.ts
-│ │ ├── mediaLibrary.ts
-│ │ ├── personalInfo.ts
-│ │ ├── projectsData.ts
-│ │ ├── skillsCloudData.ts
-│ │ └── skillsData.ts
-│ │
-│ ├── errors/
-│ │ └── NotFound.tsx
-│ │
-│ ├── hooks/
-│ │ ├── useGSAPHeading.ts
-│ │ └── useScrollToTop.ts
-│ │
-│ ├── lib/
-│ │ ├── gsap.ts
-│ │ ├── pages/
-│ │ │ ├── AboutMe.tsx
-│ │ │ ├── AboutPage.tsx
-│ │ │ ├── Contact.tsx
-│ │ │ ├── ContactPage.tsx
-│ │ │ ├── GalleryPage.tsx
-│ │ │ ├── Home.tsx
-│ │ │ ├── HomePage.module.css
-│ │ │ ├── HomePage.tsx
-│ │ │ ├── ProjectsPage.tsx
-│ │ │ ├── Skills.tsx
-│ │ │ └── SkillsPage.tsx
-│ │ ├── routes/
-│ │ │ └── Preview.tsx
-│ │ ├── services/
-│ │ └── types/
-│ │ ├── content.ts
-│ │ ├── index.ts
-│ │ ├── personalInfo.ts
-│ │ └── types.ts
-│ │
-│ ├── styles/
-│ │ ├── global.css
-│ │ └── themes.css
-│ │
-│ ├── utils/
-│ │ ├── App.css
-│ │ ├── App.tsx
-│ │ ├── index.css
-│ │ ├── main.tsx
-│ │ └── vite-env.d.ts
-│ │
-│ ├── .gitignore
-│ ├── eslint.config.js
-│ ├── index.html
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── README.md
-│ ├── tsconfig.app.json
-│ ├── tsconfig.json
-│ ├── tsconfig.node.json
-│ └── vite.config.ts
+│   ├── components/
+│   │   ├── about/                 # About page components
+│   │   ├── certificates/          # 🏆 Certificates section
+│   │   │   ├── Certificates.tsx
+│   │   │   └── Certificates.module.css
+│   │   ├── common/                # Reusable UI components
+│   │   ├── home/                  # Hero & landing sections
+│   │   │   └── Hero/
+│   │   ├── layout/                # Header, Footer, Layout
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── Navbar.tsx
+│   │   │   │   └── MobileMenu.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── Layout.tsx
+│   │   ├── projects/              # Project cards & filter
+│   │   │   ├── ProjectCard.tsx
+│   │   │   ├── ProjectCard.module.css
+│   │   │   └── ProjectFilter.tsx
+│   │   └── skills/                # 🛠️ Skills section
+│   │       ├── SkillsCloud.tsx
+│   │       └── SkillsCloud.module.css
+│   │
+│   ├── data/                      # All data files
+│   │   ├── projectsData.ts        # Projects with GitHub + Live Demo links
+│   │   ├── personalInfo.ts        # Personal info & social links
+│   │   └── mediaLibrary.ts
+│   │
+│   ├── pages/                     # Route-level pages
+│   │   ├── HomePage.tsx
+│   │   ├── ProjectsPage.tsx
+│   │   └── ContactPage.tsx
+│   │
+│   ├── types/                     # TypeScript interfaces
+│   │   └── index.ts
+│   │
+│   ├── App.tsx                    # Root app + routes
+│   └── main.tsx                   # Entry point
 │
-├── dist/
-│ ├── assets/
-│ │ ├── index-AtsWmaV.js
-│ │ └── index-CNmfvA3u.css
-│ ├── images/
-│ │ ├── about/
-│ │ │ ├── about-portrait.png
-│ │ │ └── README.txt
-│ │ ├── companions/
-│ │ │ ├── friend-1.jpg
-│ │ │ ├── friend-2.jpg
-│ │ │ └── README.txt
-│ │ └── projects/
-│ │ ├── dashboard.png
-│ │ ├── ecommerce.png
-│ │ ├── fluxault.png
-│ │ ├── quiz.png
-│ │ ├── README.txt
-│ │ ├── todo.png
-│ │ └── weather.png
-│ └── media/
-│ ├── photos/
-│ │ ├── personal/
-│ │ │ ├── personal-1.png
-│ │ │ ├── personal-2.png
-│ │ │ ├── personal-3.png
-│ │ │ ├── personal-4.png
-│ │ │ ├── personal-5.png
-│ │ │ └── personal-7.png
-│ │ └── waterpark/
-│ │ ├── waterpark-1.png
-│ │ ├── waterpark-2.png
-│ │ ├── waterpark-3.png
-│ │ ├── waterpark-4.png
-│ │ └── waterpark-5.png
-│ ├── .gitkeep
-│ ├── clg time.jpeg
-│ ├── Event.jpeg
-│ ├── img 1.jpeg
-│ ├── img 2.jpeg
-│ ├── img 3.jpeg
-│ ├── img 4.jpeg
-│ ├── img 5.jpeg
-│ ├── img 6.jpeg
-│ ├── profile.jpeg
-│ ├── project-demo-poster.png
-│ ├── School achievement.mp4
-│ └── Team Event.jpeg
-│
-├── .gitignore
-├── eslint.config.js
 ├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-├── tsconfig.app.json
+├── vite.config.ts
 ├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js `≥ 18.0`
+- npm or yarn
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/sindhavdinesh/react-portfolio-.git
+
+# 2. Navigate to project directory
+cd react-portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+# TypeScript check + Vite production build
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+---
+
+## 📜 My Certificates
+
+| Certificate | Issuer | Year |
+|---|---|---|
+| 🏆 TECHWAR 2026 — C Tsunami | Red & White Skill Education | 2026 |
+| 💼 Software Engineering Job Simulation | JPMorgan Chase & Co. via Forage | 2026 |
+| ☁️ Solutions Architecture Job Simulation | Amazon Web Services via Forage | 2026 |
+| 🎓 Vishisht Siddhi Sanmanpatra | B.N.B. High School, Vav | 2025 |
+
+---
+
+## 💼 Projects
+
+| Project | Tech | GitHub | Live |
+|---|---|---|---|
+| 🎬 FlixVault — Netflix Clone | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/FlixVault) | [Demo](https://sindhavdinesh.github.io/linkdin-project/FlixVault) |
+| 🛒 E-Commerce Platform | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/e-commerce%20product%20page) | [Demo](https://sindhavdinesh.github.io/linkdin-project/e-commerce%20product%20page) |
+| 🌤️ Weather App | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/Wheather%20App) | [Demo](https://sindhavdinesh.github.io/linkdin-project/Wheather%20App) |
+| ❓ Quiz Application | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/Quiz%20App) | [Demo](https://sindhavdinesh.github.io/linkdin-project/Quiz%20App) |
+| 📊 Dashboard UI | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/Dashboard%20UI) | [Demo](https://sindhavdinesh.github.io/linkdin-project/Dashboard%20UI) |
+| ✅ To-Do Advanced App | HTML, CSS, JS | [Code](https://github.com/sindhavdinesh/linkdin-project/tree/main/To-do-advance%20App) | [Demo](https://sindhavdinesh.github.io/linkdin-project/To-do-advance%20App) |
+
+---
+
+## 🛠️ Skills Overview
+
+```
+Frontend   ████████████████████  HTML5 (95%) • CSS3 (90%) • JS (88%) • TS (75%) • React (85%)
+Styling    ████████████████░░░░  Bootstrap (88%) • Media Query (85%)
+Backend    ███████████████░░░░░  Node JS (78%)
+Language   ██████████████░░░░░░  Python (80%) • C (72%) • C++ (70%)
+Tools      ████████████████░░░░  Git (85%) • GitHub (88%) • VS Code (95%) • Sheets (80%)
+Creative   █████████████░░░░░░░  Photoshop (70%) • Premiere Pro (65%)
+```
+
+---
+
+## 🔗 Connect With Me
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-void--by--sindhav-FF4444?style=for-the-badge&logo=vercel&logoColor=white)](https://void-by-sindhav.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-sindhavdinesh-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sindhavdinesh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dinesh_Sindhav-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dinesh-sindhav-41315a362/)
+[![Twitter](https://img.shields.io/badge/Twitter-@Sind35407Dinesh-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Sind35407Dinesh)
+[![Instagram](https://img.shields.io/badge/Instagram-mr__coder__dinesh-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/mr_coder_dinesh)
+[![Email](https://img.shields.io/badge/Email-sindhavdinesh82@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sindhavdinesh82@gmail.com)
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — feel free to use it as inspiration for your own portfolio!
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%" />
+
+**Made with ❤️ by [Sindhav Dinesh](https://github.com/sindhavdinesh)**
+
+*Code. Create. Innovate.*
+
+⭐ **Star this repo if you found it helpful!** ⭐
+
+</div>

@@ -47,7 +47,7 @@ const skills = [
   },
 ];
 
-const SkillOrbit: React.FC = () => {
+const SkillOrbit = () => {
   return (
     <motion.div
       className={styles.skillOrbit}

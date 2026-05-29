@@ -1,21 +1,10 @@
-// src/components/certificates/Certificates.tsx
+// src/components/certificates/Certificates.jsx
 import React, { useState } from 'react';
-import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaExpand, FaAward, FaBriefcase, FaCloud, FaGraduationCap } from 'react-icons/fa';
 import styles from './Certificates.module.css';
 
-interface Certificate {
-  id: number;
-  title: string;
-  issuer: string;
-  description: string;
-  date: string;
-  image: string;
-  badge: 'competition' | 'professional' | 'cloud' | 'academic';
-  badgeLabel: string;
-}
-
-const certificates: Certificate[] = [
+const certificates = [
   {
     id: 1,
     title: 'Certificate of Participation',
@@ -65,7 +54,7 @@ const badgeIcons = {
   academic: <FaGraduationCap />,
 };
 
-const containerVariants: Variants = {
+const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -73,15 +62,15 @@ const containerVariants: Variants = {
   },
 };
 
-const cardVariants: Variants = {
+const cardVariants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
-const Certificates: React.FC = () => {
-  const [selected, setSelected] = useState<Certificate | null>(null);
+const Certificates = () => {
+  const [selected, setSelected] = useState(null);
 
-  const open = (cert: Certificate) => {
+  const open = (cert) => {
     setSelected(cert);
   };
 

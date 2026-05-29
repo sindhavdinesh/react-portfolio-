@@ -1,22 +1,9 @@
-// src/components/about/VerticalTimeline.tsx
+// src/components/about/VerticalTimeline.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './About.module.css';
 
-interface TimelineItem {
-  company?: string;
-  degree?: string;
-  role?: string;
-  period: string;
-  description: string;
-  technologies?: string[];
-}
-
-interface VerticalTimelineProps {
-  items: TimelineItem[];
-}
-
-const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ items }) => {
+const VerticalTimeline = ({ items }) => {
   return (
     <div className={styles.timeline}>
       {items.map((item, index) => (

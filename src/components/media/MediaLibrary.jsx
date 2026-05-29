@@ -1,15 +1,14 @@
-// src/components/media/MediaLibrary.tsx
+// src/components/media/MediaLibrary.jsx
 import React, { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import type { MediaItem } from '../../types';
 import { mediaLibraryData, mediaCategories } from '../../data/mediaLibrary';
 import MediaCard from './MediaCard';
 import styles from './MediaLibrary.module.css';
 
-const MediaLibrary: React.FC = () => {
+const MediaLibrary = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [selected, setSelected] = useState<MediaItem | null>(null);
+  const [selected, setSelected] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const filteredItems = mediaLibraryData.filter((item) => {
@@ -20,7 +19,7 @@ const MediaLibrary: React.FC = () => {
     return item.category === activeFilter;
   });
 
-  const openItem = useCallback((item: MediaItem) => {
+  const openItem = useCallback((item) => {
     const index = filteredItems.findIndex((m) => m.id === item.id);
     setSelectedIndex(index >= 0 ? index : 0);
     setSelected(item);
@@ -28,7 +27,7 @@ const MediaLibrary: React.FC = () => {
 
   const closeLightbox = () => setSelected(null);
 
-  const goTo = useCallback((direction: 'prev' | 'next') => {
+  const goTo = useCallback((direction) => {
     if (filteredItems.length === 0) return;
     const nextIndex =
       direction === 'next'
@@ -40,7 +39,7 @@ const MediaLibrary: React.FC = () => {
 
   useEffect(() => {
     if (!selected) return;
-    const onKey = (e: KeyboardEvent) => {
+    const onKey = (e) => {
       if (e.key === 'Escape') closeLightbox();
       if (e.key === 'ArrowRight') goTo('next');
       if (e.key === 'ArrowLeft') goTo('prev');

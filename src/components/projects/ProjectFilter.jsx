@@ -1,18 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.css';
 
-interface Category {
-  id: string;
-  label: string;
-}
-
-interface ProjectFilterProps {
-  categories: Category[];
-  activeCategory: string;
-  onCategoryChange: (category: string) => void;
-}
-
-const ProjectFilter: React.FC<ProjectFilterProps> = ({ categories, activeCategory, onCategoryChange }) => {
+const ProjectFilter = ({ categories, activeCategory, onCategoryChange }) => {
   return (
     <div className={styles.filterBar}>
       <ul className={styles.filterList}>

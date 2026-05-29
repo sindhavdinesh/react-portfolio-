@@ -1,4 +1,4 @@
-// src/components/about/About.tsx
+// src/components/about/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { experienceData, education } from '../../data/data';
@@ -7,11 +7,7 @@ import AboutHero from './AboutHero';
 import CreativeCompanions from './CreativeCompanions';
 import layout from './AboutLayout.module.css';
 
-interface AboutProps {
-  embedded?: boolean;
-}
-
-const About: React.FC<AboutProps> = ({ embedded = false }) => {
+const About = ({ embedded = false }) => {
   const features = [
     { icon: <FaCode />, title: 'Clean Code', desc: 'Writing maintainable, scalable code' },
     { icon: <FaRocket />, title: 'Fast Performance', desc: 'Optimized for speed and efficiency' },

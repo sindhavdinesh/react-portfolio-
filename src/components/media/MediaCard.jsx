@@ -1,17 +1,10 @@
-// src/components/media/MediaCard.tsx
+// src/components/media/MediaCard.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaImage, FaVideo } from 'react-icons/fa';
-import type { MediaItem } from '../../types';
 import styles from './MediaLibrary.module.css';
 
-interface MediaCardProps {
-  item: MediaItem;
-  index: number;
-  onOpen: (item: MediaItem) => void;
-}
-
-const MediaCard: React.FC<MediaCardProps> = ({ item, index, onOpen }) => {
+const MediaCard = ({ item, index, onOpen }) => {
   const [imgError, setImgError] = useState(false);
   const thumbSrc = item.type === 'video' ? (item.thumbnail ?? item.src) : item.src;
 

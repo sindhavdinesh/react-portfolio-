@@ -1,11 +1,11 @@
-// src/components/about/MyDescription.tsx
+// src/components/about/MyDescription.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../../data/personalInfo';
 import { FaAward, FaUsers, FaCode, FaRocket } from 'react-icons/fa';
 import styles from './About.module.css';
 
-const MyDescription: React.FC = () => {
+const MyDescription = () => {
   const features = [
     { icon: <FaCode />, title: 'Clean Code', desc: 'Writing readable, well-organized code' },
     { icon: <FaRocket />, title: 'Always Learning', desc: 'Improving through practice and projects' },

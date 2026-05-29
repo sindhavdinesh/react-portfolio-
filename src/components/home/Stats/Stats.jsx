@@ -1,12 +1,12 @@
-// src/components/home/Stats/Stats.tsx
+// src/components/home/Stats/Stats.jsx
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { stats } from '../../../data/personalInfo';
 import StatCard from './StatCard';
 import styles from './Stats.module.css';
 
-const Stats: React.FC = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
+const Stats = () => {
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const controls = useAnimation();
 

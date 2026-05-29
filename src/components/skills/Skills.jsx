@@ -1,10 +1,10 @@
-// src/components/skills/Skills.tsx
+// src/components/skills/Skills.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { skillsData, skillCategories } from '../../data/data';
 import SkillCard from './SkillCard';
 
-const Skills: React.FC = () => {
+const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('frontend');
 
   const filteredSkills = skillsData.filter(skill => skill.category === activeCategory);

@@ -1,11 +1,11 @@
-// src/components/projects/Projects.tsx
+// src/components/projects/Projects.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsData, projectCategories } from '../../data/data';
 import ProjectCard from './ProjectCard';
 import ProjectFilter from './ProjectFilter';
 
-const Projects: React.FC = () => {
+const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filteredProjects = projectsData.filter(project => {

@@ -1,4 +1,4 @@
-// src/components/contact/Contact.tsx
+// src/components/contact/Contact.jsx
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -6,7 +6,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'rea
 import { BsTelephoneFill, BsSendFill } from 'react-icons/bs';
 import { personalInfo } from '../../data/data';
 
-const Contact: React.FC = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,16 +16,14 @@ const Contact: React.FC = () => {
 
   const [status, setStatus] = useState('');
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
 
@@ -210,6 +208,7 @@ const Contact: React.FC = () => {
                 >
                   <FaTwitter />
                 </a>
+
               </div>
             </div>
           </motion.div>

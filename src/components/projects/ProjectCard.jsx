@@ -1,18 +1,12 @@
-// src/components/projects/ProjectCard.tsx
+// src/components/projects/ProjectCard.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
-import type { Project } from '../../types';
 import styles from './ProjectCard.module.css';
 
-interface ProjectCardProps {
-  project: Project;
-  index: number;
-}
+const isValidLink = (url) => Boolean(url && url !== '#' && url.trim() !== '');
 
-const isValidLink = (url?: string) => Boolean(url && url !== '#' && url.trim() !== '');
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
+const ProjectCard = ({ project, index }) => {
   const [imgError, setImgError] = useState(false);
 
   const showDemo   = isValidLink(project.liveDemo);

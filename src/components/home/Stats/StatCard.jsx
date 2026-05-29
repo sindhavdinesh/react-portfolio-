@@ -2,14 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './Stats.module.css';
 
-interface StatCardProps {
-  stat: {
-    label: string;
-    value: string | number;
-  };
-}
-
-const StatCard: React.FC<StatCardProps> = ({ stat }) => {
+const StatCard = ({ stat }) => {
   return (
     <motion.div
       className={styles.statCard}

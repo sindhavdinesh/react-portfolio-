@@ -1,14 +1,8 @@
-// src/components/skills/SkillCard.tsx
+// src/components/skills/SkillCard.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import type { Skill } from '../../types';
 
-interface SkillCardProps {
-  skill: Skill;
-  index: number;
-}
-
-const SkillCard: React.FC<SkillCardProps> = ({ skill, index }) => {
+const SkillCard = ({ skill, index }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

@@ -3,8 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { personalInfo, aboutContent } from '../../data/data';
 import styles from './AboutHero.module.css';
 
-const AboutHero: React.FC = () => {
-  const scrollRef = useRef<HTMLElement>(null);
+const AboutHero = () => {
+  const scrollRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(aboutContent.image);
 
   const { scrollYProgress } = useScroll({

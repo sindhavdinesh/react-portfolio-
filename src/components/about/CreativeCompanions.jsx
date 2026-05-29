@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { creativeCompanions } from '../../data/data';
 import styles from './CreativeCompanions.module.css';
 
-const getInitials = (name: string) =>
+const getInitials = (name) =>
   name
     .split(' ')
     .map((part) => part[0])
@@ -12,10 +12,7 @@ const getInitials = (name: string) =>
     .slice(0, 2)
     .toUpperCase();
 
-const CompanionCard: React.FC<{
-  companion: (typeof creativeCompanions)[0];
-  index: number;
-}> = ({ companion, index }) => {
+const CompanionCard = ({ companion, index }) => {
   const [imgError, setImgError] = useState(false);
 
   return (
@@ -67,7 +64,7 @@ const CompanionCard: React.FC<{
   );
 };
 
-const CreativeCompanions: React.FC = () => {
+const CreativeCompanions = () => {
   return (
     <motion.section
       className={styles.section}

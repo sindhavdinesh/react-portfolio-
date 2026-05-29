@@ -1,4 +1,4 @@
-// src/components/home/Hero/Hero.tsx
+// src/components/home/Hero/Hero.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { personalInfo } from '../../../data/data';
 import SkillOrbit from './SkillOrbit';
 import styles from './Hero.module.css';
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>

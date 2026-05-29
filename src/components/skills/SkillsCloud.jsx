@@ -1,6 +1,6 @@
-// src/components/skills/SkillsCloud.tsx
+// src/components/skills/SkillsCloud.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   FaHtml5, FaCss3Alt, FaJs, FaPython, FaGit, FaGithub,
   FaNodeJs, FaReact, FaBootstrap, FaPaintBrush, FaPhotoVideo,
@@ -12,16 +12,7 @@ import { VscVscode } from 'react-icons/vsc';
 import { TbDeviceMobile, TbCircleLetterCFilled } from 'react-icons/tb';
 import styles from './SkillsCloud.module.css';
 
-interface Skill {
-  id: number;
-  label: string;
-  icon: React.ReactNode;
-  color: string;
-  level: number;
-  category: string;
-}
-
-const skills: Skill[] = [
+const skills = [
   { id: 1,  label: 'HTML5',         icon: <FaHtml5 />,               color: '#e34f26', level: 95, category: 'Frontend'  },
   { id: 2,  label: 'CSS3',          icon: <FaCss3Alt />,             color: '#1572b6', level: 90, category: 'Frontend'  },
   { id: 3,  label: 'JavaScript',    icon: <FaJs />,                  color: '#f7df1e', level: 88, category: 'Frontend'  },
@@ -41,7 +32,7 @@ const skills: Skill[] = [
   { id: 17, label: 'Premiere Pro',  icon: <FaPhotoVideo />,          color: '#9999ff', level: 65, category: 'Creative'  },
 ];
 
-const categoryColors: Record<string, string> = {
+const categoryColors = {
   Frontend: '#61dafb',
   Styling:  '#c084fc',
   Backend:  '#4ade80',
@@ -51,7 +42,7 @@ const categoryColors: Record<string, string> = {
 };
 
 // Positions of each icon in the arena (top%, left%)
-const arenaPos: Record<number, { top: string; left: string; dur: number; delay: number }> = {
+const arenaPos = {
   1:  { top:  '10%', left:  '6%',  dur: 3.2, delay: 0.0 },
   2:  { top:  '58%', left:  '9%',  dur: 4.1, delay: 0.6 },
   3:  { top:  '26%', left: '26%',  dur: 3.7, delay: 1.0 },
@@ -84,21 +75,21 @@ const subtitleLines = [
   'Growing my skill set step by step',
 ];
 
-const containerVariants: Variants = {
+const containerVariants = {
   hidden:  {},
   visible: { transition: { staggerChildren: 0.06 } },
 };
 
-const rowVariants: Variants = {
+const rowVariants = {
   hidden:  { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 };
 
-const SkillsCloud: React.FC = () => {
-  const [hovered, setHovered]    = useState<number | null>(null);
+const SkillsCloud = () => {
+  const [hovered, setHovered]    = useState(null);
   const [lineIndex, setLineIndex] = useState(0);
-  const [arenaHover, setArenaHover] = useState<number | null>(null);
-  const arenaRef = useRef<HTMLDivElement>(null);
+  const [arenaHover, setArenaHover] = useState(null);
+  const arenaRef = useRef(null);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   // Rotating subtitle
@@ -110,7 +101,7 @@ const SkillsCloud: React.FC = () => {
   }, []);
 
   // Mouse parallax for arena
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e) => {
     const rect = arenaRef.current?.getBoundingClientRect();
     if (!rect) return;
     setMouse({
@@ -146,7 +137,7 @@ const SkillsCloud: React.FC = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.45, ease: 'easeOut' as const }}
+                transition={{ duration: 0.45, ease: 'easeOut' }}
               >
                 {subtitleLines[lineIndex]}
               </motion.p>
@@ -220,20 +211,20 @@ const SkillsCloud: React.FC = () => {
                       '--delay': `${pos.delay}s`,
                       '--color': skill.color,
                       transform: `translate(${px}px, ${py}px)`,
-                    } as React.CSSProperties}
+                    }}
                     onMouseEnter={() => setArenaHover(skill.id)}
                     onMouseLeave={() => setArenaHover(null)}
                   >
                     {/* Outer glow pulse ring */}
                     <div
                       className={`${styles.pulseRing} ${isHov ? styles.pulseRingActive : ''}`}
-                      style={{ '--color': skill.color } as React.CSSProperties}
+                      style={{ '--color': skill.color }}
                     />
 
                     {/* Icon ring */}
                     <div
                       className={`${styles.floatRing} ${isHov ? styles.floatRingHov : ''}`}
-                      style={{ '--color': skill.color, color: skill.color } as React.CSSProperties}
+                      style={{ '--color': skill.color, color: skill.color }}
                     >
                       {skill.icon}
                     </div>
@@ -243,7 +234,7 @@ const SkillsCloud: React.FC = () => {
                       {isHov && (
                         <motion.div
                           className={styles.floatTooltip}
-                          style={{ '--color': skill.color } as React.CSSProperties}
+                          style={{ '--color': skill.color }}
                           initial={{ opacity: 0, y: 4, scale: 0.85 }}
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           exit={{ opacity: 0, y: 4, scale: 0.85 }}
@@ -296,7 +287,7 @@ const SkillsCloud: React.FC = () => {
               style={{
                 '--skill-color': skill.color,
                 '--cat-color': categoryColors[skill.category],
-              } as React.CSSProperties}
+              }}
             >
               {/* Left */}
               <div className={styles.left}>
@@ -327,7 +318,7 @@ const SkillsCloud: React.FC = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.1, ease: 'easeOut' as const, delay: 0.15 }}
+                    transition={{ duration: 1.1, ease: 'easeOut', delay: 0.15 }}
                   />
                   <motion.div
                     className={styles.dot}
@@ -335,7 +326,7 @@ const SkillsCloud: React.FC = () => {
                     initial={{ left: 0 }}
                     whileInView={{ left: `${skill.level}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.1, ease: 'easeOut' as const, delay: 0.15 }}
+                    transition={{ duration: 1.1, ease: 'easeOut', delay: 0.15 }}
                   />
                 </div>
                 <span

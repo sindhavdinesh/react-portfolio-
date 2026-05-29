@@ -28,11 +28,11 @@ const Hero: React.FC = () => {
           <div className={styles.typedContainer}>
             <TypeAnimation
               sequence={[
-                'Building Modern Web Apps',
+                'BCA Student at Vidhyadeep University',
                 2000,
-                'React & Node.js',
+                'Learning React & JavaScript',
                 2000,
-                'Creative Problem Solver',
+                'Frontend Developer in Training',
                 2000,
               ]}
               wrapper="span"

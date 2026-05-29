@@ -5,7 +5,7 @@ import type { PersonalInfo, Skill, Experience, SocialLink, CreativeCompanion, Ab
 export const personalInfo: PersonalInfo = {
   name: 'Sindhav Dinesh',
   title: 'Full Stack Developer & BCA Student',
-  bio: 'Building exceptional digital experiences with modern web technologies. 1+ years of experience in creating scalable, performant applications.',
+  bio: 'I am a BCA first-year student at Vidhyadeep University. I enjoy building websites and learning React, JavaScript, and other web technologies through hands-on projects.',
   email: 'Sindhavdinesh82@gmail.com',
   phone: '+91 9510824860',
   location: 'surat, India',
@@ -17,9 +17,9 @@ export const aboutContent: AboutContent = {
   heading: 'Who am I?',
   image: personalInfo.aboutImage ?? '/portfolio.png',
   paragraphs: [
-    `I'm ${personalInfo.name}, a tech-driven learner passionate about building real-world web solutions. I enjoy exploring modern frontend stacks, clean UI, and full-stack development — always eager to grow in a challenging professional environment.`,
-    'Beyond code, I love blending creativity with technical precision — from design and editing to thoughtful user experiences. My goal is to build products that not only perform well, but also feel inspiring to use.',
-    `${personalInfo.title}. Hands-on with React, JavaScript, Node.js, and creative tools. Based in ${personalInfo.location} — open to internships, collaborations, and meaningful projects.`,
+    `Hi, I'm ${personalInfo.name}. I'm currently in my first year of BCA at Vidhyadeep University and I've been learning web development on my own alongside my coursework. I started with basic HTML and CSS, then moved to JavaScript, and now I'm working with React.`,
+    'I like building things I can actually show people, not just code that sits on my computer. Most of what I know came from watching tutorials, reading docs, and making mistakes in my own projects.',
+    `I'm based in ${personalInfo.location} and looking to learn more through real projects and internships. I'm comfortable with React, JavaScript, and basic Node.js, and I'm always trying to improve.`,
   ],
 };
 
@@ -33,10 +33,10 @@ export const socialLinks: SocialLink[] = [
 
 // Stats
 export const stats = [
-  { label: 'Projects Completed', value: 50, suffix: '+' },
-  { label: 'Years Experience', value: 3, suffix: '+' },
-  { label: 'Happy Clients', value: 30, suffix: '+' },
-  { label: 'GitHub Commits', value: 500, suffix: '+' }
+  { label: 'Projects Completed', value: 6, suffix: '' },
+  { label: 'Months of Learning', value: 12, suffix: '+' },
+  { label: 'GitHub Repos', value: 10, suffix: '+' },
+  { label: 'GitHub Commits', value: 100, suffix: '+' }
 ];
 
 export { projectsData, projectCategories } from './projectsData';
@@ -78,30 +78,29 @@ export const education = [
 
 // Experience Data
 export const experienceData: Experience[] = [
-  
   {
-  id: 1,
-  company: 'Tech Learning Journey',
-  role: 'Creative & Technical Learner',
-  period: '2025 - Present',
-  description: 'Learning and building skills in Python, Google Sheets automation, Adobe Photoshop, and Premiere Pro while creating creative and technical projects and improving problem-solving, design, editing, and productivity workflows.',
-  technologies: ['Python', 'Google Sheets', 'Photoshop', 'Premiere Pro']
-},
+    id: 1,
+    company: 'Vidhyadeep University',
+    role: 'BCA Student',
+    period: '2025 - Present',
+    description: 'Studying Bachelor of Computer Applications. Learning programming fundamentals, web development, and computer science subjects as part of the curriculum.',
+    technologies: ['C', 'C++', 'Python', 'HTML', 'CSS', 'JavaScript']
+  },
   {
     id: 2,
-    company: 'On going journey',
-    role: 'Full Stack Developer',
-    period: '2025 - 2026',
-    description: 'Developed and maintained full-stack web applications, collaborated with design team, and optimized application performance.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'js', 'Tailwind']
+    company: 'Self Learning',
+    role: 'Frontend Developer (Learning)',
+    period: '2025 - Present',
+    description: 'Learning React and modern JavaScript through tutorials, documentation, and building my own projects. Focused on understanding components, props, state, and hooks.',
+    technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap']
   },
   {
     id: 3,
-    company: 'Freelance',
+    company: 'Personal Projects',
     role: 'Web Developer',
     period: '2025 - 2026',
-    description: 'Built responsive websites and web applications for various clients, focusing on user experience and performance.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'WordPress']
+    description: 'Built small websites and web apps to practice what I was learning. All projects are on GitHub and deployed on Netlify so anyone can try them.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
   }
 ];
 

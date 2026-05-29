@@ -7,17 +7,17 @@ import styles from './About.module.css';
 
 const MyDescription: React.FC = () => {
   const features = [
-    { icon: <FaCode />, title: 'Clean Code', desc: 'Writing maintainable, scalable code' },
-    { icon: <FaRocket />, title: 'Fast Performance', desc: 'Optimized for speed and efficiency' },
-    { icon: <FaUsers />, title: 'Team Player', desc: 'Excellent collaboration skills' },
-    { icon: <FaAward />, title: 'Quality Focus', desc: 'Attention to every detail' }
+    { icon: <FaCode />, title: 'Clean Code', desc: 'Writing readable, well-organized code' },
+    { icon: <FaRocket />, title: 'Always Learning', desc: 'Improving through practice and projects' },
+    { icon: <FaUsers />, title: 'Team Player', desc: 'Good at working with classmates and peers' },
+    { icon: <FaAward />, title: 'Detail Focused', desc: 'Paying attention to small things that matter' },
   ];
 
   return (
     <div className={styles.description}>
       <p className={styles.bio}>
-        I'm <strong>{personalInfo.name}</strong>, a passionate Full Stack Developer with 1+ years of experience
-        in building modern web applications. I love creating solutions that make a difference in people's lives.
+        I'm <strong>{personalInfo.name}</strong>, a first-year BCA student at Vidhyadeep University.
+        I enjoy learning web development and building small projects that I can share with others.
       </p>
       
       <div className={styles.features}>

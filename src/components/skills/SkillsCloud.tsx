@@ -72,16 +72,16 @@ const arenaPos: Record<number, { top: string; left: string; dur: number; delay: 
 };
 
 const subtitleLines = [
-  'Crafting Modern Web Experiences',
-  'Technologies I Master',
-  'Building Fast & Beautiful Apps',
-  'Tools Behind My Creativity',
-  'Turning Ideas Into Reality',
-  'Code. Create. Innovate.',
-  'Skills That Power My Work',
-  'Technologies I Work With',
-  'Frontend Excellence & Beyond',
-  'Engineering Digital Experiences',
+  'Technologies I am learning',
+  'Skills from my BCA coursework',
+  'Tools I use for my projects',
+  'What I have been practising',
+  'My current tech stack',
+  'Languages and frameworks I know',
+  'Skills I am building up',
+  'What I work with every day',
+  'Picked up through hands-on projects',
+  'Growing my skill set step by step',
 ];
 
 const containerVariants: Variants = {

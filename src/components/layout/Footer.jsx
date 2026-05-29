@@ -1,10 +1,10 @@
-// src/components/layout/Footer.tsx
+// src/components/layout/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import styles from './Footer.module.css';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [

@@ -1,17 +1,12 @@
-import { type ReactNode, type FC } from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSlider } from '../../context/slider';
 
-interface SliderTransitionProps {
-  children: ReactNode;
-  slideIndex: number;
-}
-
-const SliderTransition: FC<SliderTransitionProps> = ({ children, slideIndex }) => {
+const SliderTransition = ({ children, slideIndex }) => {
   const { direction } = useSlider();
 
   const variants = {
-    enter: (direction: 'left' | 'right') => ({
+    enter: (direction) => ({
       x: direction === 'right' ? 300 : -300,
       opacity: 0
     }),
@@ -19,7 +14,7 @@ const SliderTransition: FC<SliderTransitionProps> = ({ children, slideIndex }) =
       x: 0,
       opacity: 1
     },
-    exit: (direction: 'left' | 'right') => ({
+    exit: (direction) => ({
       x: direction === 'right' ? -300 : 300,
       opacity: 0
     })

@@ -3,11 +3,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { useTheme } from '../../../context/ThemeContext';
 import styles from './ThemeToggle.module.css';
 
-interface ThemeToggleProps {
-  className?: string;
-}
-
-const ThemeToggle: React.FC<ThemeToggleProps> = ({ className = '' }) => {
+const ThemeToggle = ({ className = '' }) => {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (

@@ -1,13 +1,8 @@
-// src/components/common/headings/SubHeading.tsx
+// src/components/common/Heading/SubHeading.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface SubHeadingProps {
-  children: React.ReactNode;
-  center?: boolean;
-}
-
-const SubHeading: React.FC<SubHeadingProps> = ({ children, center = true }) => {
+const SubHeading = ({ children, center = true }) => {
   return (
     <motion.h3
       initial={{ opacity: 0 }}

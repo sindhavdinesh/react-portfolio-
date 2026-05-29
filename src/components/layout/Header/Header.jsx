@@ -1,4 +1,4 @@
-// src/components/layout/Header/Header.tsx
+// src/components/layout/Header/Header.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -13,12 +13,12 @@ const navItems = [
   { id: 'skills',       label: 'Skills'       },
   { id: 'certificates', label: 'Certificates' },
   { id: 'contact',      label: 'Contact'      },
-] as const;
+];
 
-const Header: React.FC = () => {
+const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>('home');
+  const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
 
     const sections = navItems
       .map((item) => document.getElementById(item.id))
-      .filter((el): el is HTMLElement => el !== null);
+      .filter((el) => el !== null);
 
     if (sections.length === 0) return;
 
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
   }, [location.pathname]);
 
   const scrollToSection = useCallback(
-    (sectionId: string) => {
+    (sectionId) => {
       setIsMenuOpen(false);
 
       if (location.pathname !== '/') {
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
     [location.pathname, navigate]
   );
 
-  const isActive = (sectionId: string) =>
+  const isActive = (sectionId) =>
     location.pathname === '/' && activeSection === sectionId;
 
   return (

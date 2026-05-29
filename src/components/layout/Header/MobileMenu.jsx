@@ -1,14 +1,9 @@
-// src/components/layout/Header/MobileMenu.tsx
+// src/components/layout/Header/MobileMenu.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import styles from './Header.module.css';
-
-interface MobileMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
 
 const navItems = [
   { path: '/', label: 'Home' },
@@ -19,7 +14,7 @@ const navItems = [
   { path: '/contact', label: 'Contact' }
 ];
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
+const MobileMenu = ({ isOpen, onClose }) => {
   return (
     <AnimatePresence>
       {isOpen && (

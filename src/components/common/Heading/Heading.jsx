@@ -1,15 +1,8 @@
-// src/components/common/headings/Heading.tsx
+// src/components/common/Heading/Heading.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface HeadingProps {
-  title: string;
-  subtitle?: string;
-  center?: boolean;
-  gradient?: boolean;
-}
-
-const Heading: React.FC<HeadingProps> = ({ title, subtitle, center = true, gradient = true }) => {
+const Heading = ({ title, subtitle, center = true, gradient = true }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

@@ -1,13 +1,8 @@
-// src/components/transitions/ChildTransition.tsx
-import { type ReactNode, type FC } from 'react';
+// src/components/transitions/ChildTransition.jsx
+import React from 'react';
 import { motion } from 'framer-motion';
 
-interface ChildTransitionProps {
-  children: ReactNode;
-  delay?: number;
-}
-
-const ChildTransition: FC<ChildTransitionProps> = ({ children, delay = 0 }) => {
+const ChildTransition = ({ children, delay = 0 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

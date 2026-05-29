@@ -1,18 +1,8 @@
-// src/components/common/Button/Button.tsx
+// src/components/common/Button/Button.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface ButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
-  variant?: 'primary' | 'secondary' | 'outline';
-  size?: 'small' | 'medium' | 'large';
-  disabled?: boolean;
-  className?: string;
-}
-
-const Button: React.FC<ButtonProps> = ({
+const Button = ({
   children,
   onClick,
   type = 'button',

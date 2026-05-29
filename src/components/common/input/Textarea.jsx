@@ -1,18 +1,8 @@
-// src/components/common/input/Textarea.tsx
+// src/components/common/input/Textarea.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface TextareaProps {
-  name: string;
-  placeholder: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  rows?: number;
-  required?: boolean;
-  error?: string;
-}
-
-const Textarea: React.FC<TextareaProps> = ({
+const Textarea = ({
   name,
   placeholder,
   value,

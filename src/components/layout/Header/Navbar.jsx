@@ -1,4 +1,4 @@
-// src/components/layout/Header/Navbar.tsx
+// src/components/layout/Header/Navbar.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -13,7 +13,7 @@ const navItems = [
   { path: '/contact', label: 'Contact' }
 ];
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navList}>

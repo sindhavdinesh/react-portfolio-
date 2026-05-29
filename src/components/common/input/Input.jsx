@@ -1,18 +1,8 @@
-// src/components/common/input/Input.tsx
+// src/components/common/input/Input.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface InputProps {
-  type?: string;
-  name: string;
-  placeholder: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  required?: boolean;
-  error?: string;
-}
-
-const Input: React.FC<InputProps> = ({
+const Input = ({
   type = 'text',
   name,
   placeholder,

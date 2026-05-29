@@ -1,8 +1,8 @@
-// src/components/common/Loader/SkeletonLoader.tsx
+// src/components/common/Loader/SkeletonLoader.jsx
 import React from 'react';
 import './SkeletonLoader.css';
 
-const SkeletonLoader: React.FC = () => {
+const SkeletonLoader = () => {
   return (
     <div className="skeleton-grid">
       {[1, 2, 3, 4, 5, 6].map((i) => (

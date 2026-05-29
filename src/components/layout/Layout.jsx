@@ -1,13 +1,9 @@
-// src/components/layout/Layout.tsx
+// src/components/layout/Layout.jsx
 import React from 'react';
 import Header from './Header/Header';
 import Footer from './Footer';
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />

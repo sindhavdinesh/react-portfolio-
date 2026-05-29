@@ -1,15 +1,8 @@
-// src/components/common/Button/ButtonOutline.tsx
+// src/components/common/Button/ButtonOutline.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface ButtonOutlineProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  href?: string;
-  target?: string;
-}
-
-const ButtonOutline: React.FC<ButtonOutlineProps> = ({ children, onClick, href, target }) => {
+const ButtonOutline = ({ children, onClick, href, target }) => {
   const buttonStyle = {
     padding: '0.8rem 2rem',
     background: 'transparent',
@@ -40,7 +33,7 @@ const ButtonOutline: React.FC<ButtonOutlineProps> = ({ children, onClick, href, 
     );
   }
 
-  return <button onClick={onClick} style={buttonStyle as React.CSSProperties}>{children}</button>;
+  return <button onClick={onClick} style={buttonStyle}>{children}</button>;
 };
 
 export default ButtonOutline;

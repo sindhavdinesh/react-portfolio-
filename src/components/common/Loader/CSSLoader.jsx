@@ -1,8 +1,8 @@
-// src/components/common/Loader/CSSLoader.tsx
+// src/components/common/Loader/CSSLoader.jsx
 import React from 'react';
 import './CSSLoader.css';
 
-const CSSLoader: React.FC = () => {
+const CSSLoader = () => {
   return (
     <div className="css-loader-container">
       <div className="css-loader">

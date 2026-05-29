@@ -1,13 +1,8 @@
-// src/components/common/Loader/ButtonLoader.tsx
+// src/components/common/Loader/ButtonLoader.jsx
 import React from 'react';
 import './ButtonLoader.css';
 
-interface ButtonLoaderProps {
-  text: string;
-  loading: boolean;
-}
-
-const ButtonLoader: React.FC<ButtonLoaderProps> = ({ text, loading }) => {
+const ButtonLoader = ({ text, loading }) => {
   return (
     <div className="button-loader">
       {loading ? (

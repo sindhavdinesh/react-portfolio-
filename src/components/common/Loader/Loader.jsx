@@ -1,16 +1,12 @@
-// src/components/common/Loader/Loader.tsx
+// src/components/common/Loader/Loader.jsx
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Loader.css';
 
-interface LoaderProps {
-  children: React.ReactNode;
-}
-
 const HELLO = 'Hello';
 const LOADING_MS = 3200;
 
-const Loader: React.FC<LoaderProps> = ({ children }) => {
+const Loader = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
 

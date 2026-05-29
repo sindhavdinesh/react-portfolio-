@@ -1,9 +1,9 @@
-// src/hooks/useGSAPHeading.ts
+// src/hooks/useGSAPHeading.js
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-export const useGSAPHeading = (selector: string) => {
-  const elementRef = useRef<HTMLElement | null>(null);
+export const useGSAPHeading = (selector) => {
+  const elementRef = useRef(null);
 
   useEffect(() => {
     const elements = document.querySelectorAll(selector);

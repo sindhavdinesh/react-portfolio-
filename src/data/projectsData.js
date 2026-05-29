@@ -1,8 +1,7 @@
-// src/data/projectsData.ts
+// src/data/projectsData.js
 // GitHub links already set | liveDemo = '#' means Coming Soon (grey button)
-import type { Project } from '../types';
 
-export const projectsData: Project[] = [
+export const projectsData = [
   {
     id: 1,
     title: 'FlixVault - Netflix Clone',

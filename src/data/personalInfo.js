@@ -1,7 +1,4 @@
-export interface Stat {
-  label: string;
-  value: string | number;
-}
+// src/data/personalInfo.js
 
 export const personalInfo = {
   name: 'sindhav dinesh',
@@ -11,7 +8,7 @@ export const personalInfo = {
   phone: '+91 9510824860'
 };
 
-export const stats: Stat[] = [
+export const stats = [
   {
     label: 'Projects Completed',
     value: 50

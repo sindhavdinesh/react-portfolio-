@@ -1,10 +1,8 @@
-// src/data/mediaLibrary.ts
+// src/data/mediaLibrary.js
 // Gallery section removed — Certificates section use ho raha hai
-
-import type { MediaItem } from '../types';
 
 export const mediaCategories = [
   { id: 'all', label: 'All' },
 ];
 
-export const mediaLibraryData: MediaItem[] = [];
+export const mediaLibraryData = [];

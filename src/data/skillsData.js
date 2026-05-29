@@ -1,7 +1,6 @@
-// src/data/skillsData.ts
-import type { Skill } from '../types';
+// src/data/skillsData.js
 
-export const skillsData: Skill[] = [
+export const skillsData = [
   // Frontend
   { name: 'React', level: 90, category: 'frontend', yearsOfExperience: 3, icon: '⚛️' },
   { name: 'TypeScript', level: 85, category: 'frontend', yearsOfExperience: 2, icon: '📘' },

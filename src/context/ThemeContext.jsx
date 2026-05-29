@@ -1,13 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
-// src/context/ThemeContext.tsx
+// src/context/ThemeContext.jsx
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import type { ThemeContextType, ThemeProviderProps } from '../types/context';
 
 const STORAGE_KEY = 'portfolio-theme';
 
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+const ThemeContext = createContext(null);
 
-const getInitialDarkMode = (): boolean => {
+const getInitialDarkMode = () => {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === 'light') return false;
@@ -18,7 +17,7 @@ const getInitialDarkMode = (): boolean => {
   return true;
 };
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(getInitialDarkMode);
 
   useEffect(() => {

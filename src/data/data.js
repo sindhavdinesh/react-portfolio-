@@ -1,8 +1,7 @@
-// src/data/data.ts
-import type { PersonalInfo, Skill, Experience, SocialLink, CreativeCompanion, AboutContent } from '../types';
+// src/data/data.js
 
 // Personal Information
-export const personalInfo: PersonalInfo = {
+export const personalInfo = {
   name: 'Sindhav Dinesh',
   title: 'Full Stack Developer & BCA Student',
   bio: 'I am a BCA first-year student at Vidhyadeep University. I enjoy building websites and learning React, JavaScript, and other web technologies through hands-on projects.',
@@ -13,7 +12,7 @@ export const personalInfo: PersonalInfo = {
   aboutImage: '/images/about/about-portrait.png',
 };
 
-export const aboutContent: AboutContent = {
+export const aboutContent = {
   heading: 'Who am I?',
   image: personalInfo.aboutImage ?? '/portfolio.png',
   paragraphs: [
@@ -24,7 +23,7 @@ export const aboutContent: AboutContent = {
 };
 
 // Social Links
-export const socialLinks: SocialLink[] = [
+export const socialLinks = [
   { platform: 'GitHub', url: 'https://github.com/sindhavdinesh', icon: 'FaGithub' },
   { platform: 'LinkedIn', url: 'https://linkedin.com/in/sindhavdinesh', icon: 'FaLinkedin' },
   { platform: 'Twitter', url: 'https://twitter.com/sindhavdinesh', icon: 'FaTwitter' },
@@ -42,7 +41,7 @@ export const stats = [
 export { projectsData, projectCategories } from './projectsData';
 
 // Skills Data
-export const skillsData: Skill[] = [
+export const skillsData = [
   { name: 'HTML', level: 95, category: 'frontend', yearsOfExperience: 2, icon: '🌐' },
   { name: 'CSS', level: 90, category: 'frontend', yearsOfExperience: 2, icon: '🎨' },
   { name: 'JavaScript', level: 88, category: 'frontend', yearsOfExperience: 2, icon: '⚡' },
@@ -77,7 +76,7 @@ export const education = [
 ];
 
 // Experience Data
-export const experienceData: Experience[] = [
+export const experienceData = [
   {
     id: 1,
     company: 'Vidhyadeep University',
@@ -105,7 +104,7 @@ export const experienceData: Experience[] = [
 ];
 
 // Creative Companions — update names, photos & LinkedIn URLs
-export const creativeCompanions: CreativeCompanion[] = [
+export const creativeCompanions = [
   {
     id: 1,
     name: 'Akshat Kumbhani',

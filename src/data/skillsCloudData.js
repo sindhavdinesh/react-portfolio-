@@ -1,4 +1,3 @@
-import type { IconType } from 'react-icons';
 import {
   SiTensorflow,
   SiOpencv,
@@ -16,20 +15,7 @@ import {
   SiC,
 } from 'react-icons/si';
 
-export type SkillBubbleSize = 'sm' | 'md' | 'lg';
-
-export interface SkillBubble {
-  id: string;
-  label: string;
-  Icon: IconType;
-  color: string;
-  top: string;
-  left: string;
-  size: SkillBubbleSize;
-  delay: number;
-}
-
-export const skillBubbles: SkillBubble[] = [
+export const skillBubbles = [
   { id: 'tensorflow', label: 'TensorFlow', Icon: SiTensorflow, color: '#FF6F00', top: '8%', left: '6%', size: 'md', delay: 0 },
   { id: 'opencv', label: 'OpenCV', Icon: SiOpencv, color: '#5C3EE8', top: '22%', left: '18%', size: 'sm', delay: 0.1 },
   { id: 'python', label: 'Python', Icon: SiPython, color: '#3776AB', top: '42%', left: '4%', size: 'md', delay: 0.2 },

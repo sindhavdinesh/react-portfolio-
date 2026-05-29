@@ -1,7 +1,6 @@
-// src/data/experienceData.ts
-import type { Experience } from '../types';
+// src/data/experienceData.js
 
-export const experienceData: Experience[] = [
+export const experienceData = [
   {
     id: 1,
     company: 'Tech Learning Journey',

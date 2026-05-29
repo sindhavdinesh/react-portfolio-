@@ -1,13 +1,12 @@
-// src/context/SliderContext.tsx
+// src/context/SliderContext.jsx
 /* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useState, useContext } from 'react';
-import type { SliderContextType, SliderProviderProps } from '../types/context';
 
-export const SliderContext = createContext<SliderContextType | undefined>(undefined);
+export const SliderContext = createContext(null);
 
-export const SliderProvider: React.FC<SliderProviderProps> = ({ children }) => {
+export const SliderProvider = ({ children }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const [direction, setDirection] = useState('right');
 
   const nextSlide = () => {
     setDirection('right');

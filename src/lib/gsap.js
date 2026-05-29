@@ -1,19 +1,17 @@
-// src/lib/gsap.ts
+// src/lib/gsap.js
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-type GSAPTarget = string | Element | Element[] | NodeListOf<Element>;
-
-const resolveTarget = (target: GSAPTarget) => {
+const resolveTarget = (target) => {
   if (typeof target === 'string') {
-    return gsap.utils.toArray<HTMLElement>(target);
+    return gsap.utils.toArray(target);
   }
   return target;
 };
 
-export const fadeInUp = (element: GSAPTarget, delay: number = 0) => {
+export const fadeInUp = (element, delay = 0) => {
   const target = resolveTarget(element);
 
   gsap.fromTo(
@@ -34,7 +32,7 @@ export const fadeInUp = (element: GSAPTarget, delay: number = 0) => {
   );
 };
 
-export const scaleIn = (element: GSAPTarget, delay: number = 0) => {
+export const scaleIn = (element, delay = 0) => {
   const target = resolveTarget(element);
 
   gsap.fromTo(target,

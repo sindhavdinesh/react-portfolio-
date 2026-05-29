@@ -1,6 +1,4 @@
-// src/data/data.js
 
-// Personal Information
 export const personalInfo = {
   name: 'Sindhav Dinesh',
   title: 'Full Stack Developer & BCA Student',
@@ -22,7 +20,6 @@ export const aboutContent = {
   ],
 };
 
-// Social Links
 export const socialLinks = [
   { platform: 'GitHub', url: 'https://github.com/sindhavdinesh', icon: 'FaGithub' },
   { platform: 'LinkedIn', url: 'https://linkedin.com/in/sindhavdinesh', icon: 'FaLinkedin' },
@@ -30,7 +27,6 @@ export const socialLinks = [
   { platform: 'Instagram', url: 'https://instagram.com/sindhavdinesh', icon: 'FaInstagram' }
 ];
 
-// Stats
 export const stats = [
   { label: 'Projects Completed', value: 6, suffix: '' },
   { label: 'Months of Learning', value: 12, suffix: '+' },
@@ -40,7 +36,6 @@ export const stats = [
 
 export { projectsData, projectCategories } from './projectsData';
 
-// Skills Data
 export const skillsData = [
   { name: 'HTML', level: 95, category: 'frontend', yearsOfExperience: 2, icon: '🌐' },
   { name: 'CSS', level: 90, category: 'frontend', yearsOfExperience: 2, icon: '🎨' },
@@ -58,7 +53,6 @@ export const skillsData = [
   { name: 'Adobe Premiere Pro', level: 85, category: 'design', yearsOfExperience: 2, icon: '🎬' }
 ];
 
-// Education Data
 export const education = [
   {
     degree: 'BCA — Bachelor of Computer Applications',
@@ -75,7 +69,6 @@ export const education = [
 },
 ];
 
-// Experience Data
 export const experienceData = [
   {
     id: 1,
@@ -103,7 +96,6 @@ export const experienceData = [
   }
 ];
 
-// Creative Companions — update names, photos & LinkedIn URLs
 export const creativeCompanions = [
   {
     id: 1,
@@ -123,7 +115,6 @@ export const creativeCompanions = [
   },
 ];
 
-// Skill Categories
 export const skillCategories = [
   { id: 'frontend', label: 'Frontend Development', color: '#00f3ff' },
   { id: 'backend', label: 'Backend Development', color: '#ff00e4' },

@@ -1,5 +1,3 @@
-// src/data/projectsData.js
-// GitHub links already set | liveDemo = '#' means Coming Soon (grey button)
 
 export const projectsData = [
   {

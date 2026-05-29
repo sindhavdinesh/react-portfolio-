@@ -1,4 +1,3 @@
-// src/components/layout/Header/MobileMenu.jsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';

@@ -1,4 +1,3 @@
-// src/components/projects/ProjectCard.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaStar } from 'react-icons/fa';
@@ -21,14 +20,12 @@ const ProjectCard = ({ project, index }) => {
       transition={{ delay: index * 0.08, duration: 0.5, ease: 'easeOut' }}
       whileHover={{ y: -10 }}
     >
-      {/* Featured badge */}
       {project.featured && (
         <div className={styles.featuredBadge}>
           <FaStar /> Featured
         </div>
       )}
 
-      {/* Image */}
       <div className={styles.imageWrap}>
         {!imgError ? (
           <img
@@ -44,25 +41,21 @@ const ProjectCard = ({ project, index }) => {
           </div>
         )}
 
-        {/* Hover overlay — category tag */}
         <div className={styles.overlay}>
           <span className={styles.categoryTag}>{project.category}</span>
         </div>
       </div>
 
-      {/* Body */}
       <div className={styles.body}>
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.desc}>{project.description}</p>
 
-        {/* Tech tags */}
         <div className={styles.tags}>
           {project.tech.map((tech) => (
             <span key={tech} className={styles.tag}>{tech}</span>
           ))}
         </div>
 
-        {/* ── Buttons row ── */}
         <div className={styles.btnRow}>
           {showGithub ? (
             <a

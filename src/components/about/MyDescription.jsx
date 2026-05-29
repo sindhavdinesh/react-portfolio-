@@ -1,4 +1,3 @@
-// src/components/about/MyDescription.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../../data/personalInfo';

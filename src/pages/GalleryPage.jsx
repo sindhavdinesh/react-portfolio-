@@ -1,4 +1,3 @@
-// src/pages/GalleryPage.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import MediaLibrary from '../components/media/MediaLibrary';

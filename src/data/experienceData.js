@@ -1,4 +1,3 @@
-// src/data/experienceData.js
 
 export const experienceData = [
   {

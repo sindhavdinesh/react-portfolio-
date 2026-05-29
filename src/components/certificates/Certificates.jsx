@@ -1,4 +1,3 @@
-// src/components/certificates/Certificates.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaExpand, FaAward, FaBriefcase, FaCloud, FaGraduationCap } from 'react-icons/fa';
@@ -92,7 +91,6 @@ const Certificates = () => {
   return (
     <section className={styles.section} id="certificates">
       <div className={styles.container}>
-        {/* Heading */}
         <motion.div
           className={styles.heading}
           initial={{ opacity: 0, y: 24 }}
@@ -107,7 +105,6 @@ const Certificates = () => {
           <div className={styles.divider} />
         </motion.div>
 
-        {/* Grid */}
         <motion.div
           className={styles.grid}
           variants={containerVariants}
@@ -128,7 +125,6 @@ const Certificates = () => {
               onKeyDown={(e) => e.key === 'Enter' && open(cert)}
               aria-label={`View ${cert.title}`}
             >
-              {/* Image */}
               <div className={styles.imgWrap}>
                 <img
                   src={cert.image}
@@ -141,7 +137,6 @@ const Certificates = () => {
                 </div>
               </div>
 
-              {/* Info */}
               <div className={styles.info}>
                 <span className={`${styles.badge} ${styles[cert.badge]}`}>
                   {badgeIcons[cert.badge]}
@@ -166,7 +161,6 @@ const Certificates = () => {
         </motion.div>
       </div>
 
-      {/* Lightbox */}
       <AnimatePresence>
         {selected && (
           <motion.div

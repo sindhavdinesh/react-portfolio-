@@ -1,4 +1,3 @@
-// src/pages/AboutMe.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import About from '../components/about/About';

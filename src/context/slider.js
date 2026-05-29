@@ -1,4 +1,3 @@
-// src/context/slider.ts
 import { useContext } from 'react';
 import { SliderContext } from './SliderContext';
 

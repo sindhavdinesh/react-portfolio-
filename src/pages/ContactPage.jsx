@@ -65,7 +65,6 @@ const ContactPage = () => {
         </motion.p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px' }}>
-          {/* Info Card */}
           <motion.div
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -123,7 +122,6 @@ const ContactPage = () => {
             </div>
           </motion.div>
 
-          {/* Form Card */}
           <motion.div
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

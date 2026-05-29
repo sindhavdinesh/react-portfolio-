@@ -1,8 +1,6 @@
-// src/pages/Home.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Fallback inline Hero component to avoid missing module import
 const Hero = () => (
   <section style={{ padding: '4rem 1rem', textAlign: 'center' }}>
     <h1>Welcome</h1>

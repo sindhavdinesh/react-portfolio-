@@ -1,4 +1,3 @@
-// src/components/about/About.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { experienceData, education } from '../../data/data';

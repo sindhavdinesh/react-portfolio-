@@ -1,4 +1,3 @@
-// src/components/contact/Contact.jsx
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -103,7 +102,6 @@ const Contact = () => {
           }}
         >
           
-          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -161,7 +159,6 @@ const Contact = () => {
               </motion.div>
             ))}
 
-            {/* Social Links */}
             <div
               style={{
                 background: 'rgba(255, 255, 255, 0.03)',
@@ -213,7 +210,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.form
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}

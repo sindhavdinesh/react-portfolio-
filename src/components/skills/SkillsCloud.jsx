@@ -1,4 +1,3 @@
-// src/components/skills/SkillsCloud.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -116,7 +115,6 @@ const SkillsCloud = () => {
     <section className={styles.section} id="skills">
       <div className={styles.inner}>
 
-        {/* ─── Heading ─── */}
         <motion.div
           className={styles.heading}
           initial={{ opacity: 0, y: 24 }}
@@ -128,7 +126,6 @@ const SkillsCloud = () => {
             My <span className={styles.grad}>Skills</span>
           </h2>
 
-          {/* Rotating subtitle */}
           <div className={styles.subtitleWrap}>
             <AnimatePresence mode="wait">
               <motion.p
@@ -146,9 +143,6 @@ const SkillsCloud = () => {
           <div className={styles.divider} />
         </motion.div>
 
-        {/* ════════════════════════════════════════
-            ⬆  FLOATING ICON ARENA  (NEW)
-            ════════════════════════════════════════ */}
         <motion.div
           className={styles.arenaWrap}
           initial={{ opacity: 0, y: 30 }}
@@ -156,13 +150,11 @@ const SkillsCloud = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          {/* top hint */}
           <div className={styles.arenaTopRow}>
             <span className={styles.arenaHint}>⚡ Interactive Skill Cloud — hover to explore</span>
             <span className={styles.arenaCount}>{skills.length} Technologies</span>
           </div>
 
-          {/* the arena box */}
           <div
             ref={arenaRef}
             className={styles.arena}
@@ -170,16 +162,13 @@ const SkillsCloud = () => {
             onMouseLeave={handleMouseLeave}
             style={{ position: 'relative' }}
           >
-            {/* Animated dot-grid background layer */}
             <div className={styles.arenaDots} />
 
-            {/* Corner accent lines */}
             <span className={`${styles.corner} ${styles.cornerTL}`} />
             <span className={`${styles.corner} ${styles.cornerTR}`} />
             <span className={`${styles.corner} ${styles.cornerBL}`} />
             <span className={`${styles.corner} ${styles.cornerBR}`} />
 
-            {/* Floating icons */}
             {skills.map((skill, i) => {
               const pos = arenaPos[skill.id];
               if (!pos) return null;
@@ -215,13 +204,11 @@ const SkillsCloud = () => {
                     onMouseEnter={() => setArenaHover(skill.id)}
                     onMouseLeave={() => setArenaHover(null)}
                   >
-                    {/* Outer glow pulse ring */}
                     <div
                       className={`${styles.pulseRing} ${isHov ? styles.pulseRingActive : ''}`}
                       style={{ '--color': skill.color }}
                     />
 
-                    {/* Icon ring */}
                     <div
                       className={`${styles.floatRing} ${isHov ? styles.floatRingHov : ''}`}
                       style={{ '--color': skill.color, color: skill.color }}
@@ -229,7 +216,6 @@ const SkillsCloud = () => {
                       {skill.icon}
                     </div>
 
-                    {/* Label tooltip */}
                     <AnimatePresence>
                       {isHov && (
                         <motion.div
@@ -258,18 +244,12 @@ const SkillsCloud = () => {
           </div>
         </motion.div>
 
-        {/* ════════════════════════════════════════
-            ⬇  SECTION BREAK
-            ════════════════════════════════════════ */}
         <div className={styles.sectionBreak}>
           <div className={styles.breakLine} />
           <span className={styles.breakLabel}>Skills Proficiency</span>
           <div className={styles.breakLine} />
         </div>
 
-        {/* ════════════════════════════════════════
-            ⬇  2-COLUMN PROGRESS GRID (EXISTING)
-            ════════════════════════════════════════ */}
         <motion.div
           className={styles.grid}
           variants={containerVariants}
@@ -289,7 +269,6 @@ const SkillsCloud = () => {
                 '--cat-color': categoryColors[skill.category],
               }}
             >
-              {/* Left */}
               <div className={styles.left}>
                 <div className={styles.iconBox} style={{ color: skill.color }}>
                   {skill.icon}
@@ -309,7 +288,6 @@ const SkillsCloud = () => {
                 </div>
               </div>
 
-              {/* Progress bar */}
               <div className={styles.barWrap}>
                 <div className={styles.barTrack}>
                   <motion.div
@@ -340,7 +318,6 @@ const SkillsCloud = () => {
           ))}
         </motion.div>
 
-        {/* ─── Category Legend ─── */}
         <motion.div
           className={styles.legend}
           initial={{ opacity: 0, y: 20 }}

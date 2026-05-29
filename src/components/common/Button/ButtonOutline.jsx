@@ -1,4 +1,3 @@
-// src/components/common/Button/ButtonOutline.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 

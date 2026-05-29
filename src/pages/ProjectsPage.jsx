@@ -1,4 +1,3 @@
-// src/pages/ProjectsPage.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from '../components/projects/ProjectCard';

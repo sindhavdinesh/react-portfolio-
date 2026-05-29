@@ -1,4 +1,3 @@
-// Floating skill icons around profile circle
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs } from 'react-icons/si';

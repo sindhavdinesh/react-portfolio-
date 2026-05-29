@@ -1,4 +1,3 @@
-// src/components/projects/Projects.jsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsData, projectCategories } from '../../data/data';

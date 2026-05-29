@@ -1,4 +1,3 @@
-// src/components/media/MediaCard.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaImage, FaVideo } from 'react-icons/fa';

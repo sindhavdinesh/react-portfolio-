@@ -1,4 +1,3 @@
-// src/components/common/Loader/CSSLoader.jsx
 import React from 'react';
 import './CSSLoader.css';
 

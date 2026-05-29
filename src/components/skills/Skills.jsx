@@ -1,4 +1,3 @@
-// src/components/skills/Skills.jsx
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { skillsData, skillCategories } from '../../data/data';
@@ -25,7 +24,6 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        {/* Category Filter */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '3rem', flexWrap: 'wrap' }}>
           {skillCategories.map(cat => (
             <button
@@ -46,7 +44,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skills Grid */}
         <motion.div
           key={activeCategory}
           initial={{ opacity: 0, y: 20 }}

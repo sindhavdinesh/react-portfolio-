@@ -1,4 +1,3 @@
-// src/data/personalInfo.js
 
 export const personalInfo = {
   name: 'sindhav dinesh',

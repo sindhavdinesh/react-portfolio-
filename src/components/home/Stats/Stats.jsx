@@ -1,4 +1,3 @@
-// src/components/home/Stats/Stats.jsx
 import React, { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { stats } from '../../../data/personalInfo';

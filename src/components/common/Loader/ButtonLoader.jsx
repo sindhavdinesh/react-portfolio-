@@ -1,4 +1,3 @@
-// src/components/common/Loader/ButtonLoader.jsx
 import React from 'react';
 import './ButtonLoader.css';
 

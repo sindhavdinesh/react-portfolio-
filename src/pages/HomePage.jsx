@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/home/Hero/Hero';

@@ -1,4 +1,3 @@
-// src/data/skillsData.js
 
 export const skillsData = [
   // Frontend

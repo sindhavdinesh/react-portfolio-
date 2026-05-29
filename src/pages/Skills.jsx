@@ -1,4 +1,3 @@
-// src/pages/Skills.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import Skills from '../components/skills/Skills';

@@ -1,4 +1,3 @@
-// src/hooks/useGSAPHeading.js
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 

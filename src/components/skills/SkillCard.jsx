@@ -1,4 +1,3 @@
-// src/components/skills/SkillCard.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,7 +24,6 @@ const SkillCard = ({ skill, index }) => {
         </div>
       </div>
       
-      {/* Skill Bar */}
       <div style={{ marginTop: '1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.8rem', color: '#a0a0c0' }}>
           <span>Proficiency</span>

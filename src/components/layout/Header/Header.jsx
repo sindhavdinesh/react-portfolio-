@@ -1,4 +1,3 @@
-// src/components/layout/Header/Header.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';

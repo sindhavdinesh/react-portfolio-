@@ -1,4 +1,4 @@
-// src/pages/HomePage.tsx
+// src/pages/HomePage.jsx
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/home/Hero/Hero';
@@ -10,14 +10,14 @@ import Certificates from '../components/certificates/Certificates';
 import ContactPage from './ContactPage';
 import styles from './HomePage.module.css';
 
-const SECTION_IDS = ['home', 'about', 'projects', 'skills', 'certificates', 'contact'] as const;
+const SECTION_IDS = ['home', 'about', 'projects', 'skills', 'certificates', 'contact'];
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   const location = useLocation();
 
   useEffect(() => {
     const hash = location.hash.replace('#', '');
-    if (!hash || !SECTION_IDS.includes(hash as (typeof SECTION_IDS)[number])) return;
+    if (!hash || !SECTION_IDS.includes(hash)) return;
 
     const timer = window.setTimeout(() => {
       document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });

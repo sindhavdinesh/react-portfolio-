@@ -1,9 +1,9 @@
-// src/pages/Contact.tsx
+// src/pages/Skills.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import Contact from '../components/contact/Contact';
+import Skills from '../components/skills/Skills';
 
-const ContactPage: React.FC = () => {
+const SkillsPage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,9 +11,9 @@ const ContactPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Contact />
+      <Skills />
     </motion.div>
   );
 };
 
-export default ContactPage;
+export default SkillsPage;

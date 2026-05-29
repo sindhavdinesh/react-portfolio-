@@ -1,9 +1,9 @@
-// src/pages/GalleryPage.tsx
+// src/pages/AboutMe.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import MediaLibrary from '../components/media/MediaLibrary';
+import About from '../components/about/About';
 
-const GalleryPage: React.FC = () => {
+const AboutMe = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,9 +11,9 @@ const GalleryPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <MediaLibrary />
+      <About />
     </motion.div>
   );
 };
 
-export default GalleryPage;
+export default AboutMe;

@@ -1,18 +1,18 @@
+// src/routes/Preview.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import SkillsCloud from '../components/skills/SkillsCloud';
+import Hero from '../components/home/Hero/Hero';
 
-const SkillsPage: React.FC = () => {
+const Preview = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <SkillsCloud />
+      <Hero />
     </motion.div>
   );
 };
 
-export default SkillsPage;
+export default Preview;

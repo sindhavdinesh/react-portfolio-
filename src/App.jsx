@@ -7,7 +7,7 @@ import Loader from './components/common/Loader/Loader';
 import { ThemeProvider } from './context/ThemeContext';
 import { SliderProvider } from './context/SliderContext';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <Loader>
     <ThemeProvider>

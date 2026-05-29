@@ -1,18 +1,19 @@
-// src/routes/Preview.tsx
+// src/pages/Contact.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import Hero from '../components/home/Hero/Hero';
+import Contact from '../components/contact/Contact';
 
-const Preview: React.FC = () => {
+const ContactPage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Hero />
+      <Contact />
     </motion.div>
   );
 };
 
-export default Preview;
+export default ContactPage;

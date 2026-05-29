@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import { BsTelephoneFill } from 'react-icons/bs';
-import type { ContactFormData } from '../types';
 
-const ContactPage: React.FC = () => {
-  const [formData, setFormData] = useState<ContactFormData>({
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
@@ -15,12 +14,12 @@ const ContactPage: React.FC = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       setErrorMsg('Please fill in all fields.');

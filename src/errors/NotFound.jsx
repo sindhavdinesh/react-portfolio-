@@ -1,9 +1,9 @@
-// src/errors/NotFound.tsx
+// src/errors/NotFound.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const NotFound: React.FC = () => {
+const NotFound = () => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}

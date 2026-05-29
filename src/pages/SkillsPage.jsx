@@ -1,9 +1,8 @@
-// src/pages/AboutPage.tsx
 import React from 'react';
-import About from '../components/about/About';
 import { motion } from 'framer-motion';
+import SkillsCloud from '../components/skills/SkillsCloud';
 
-const AboutPage: React.FC = () => {
+const SkillsPage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -11,9 +10,9 @@ const AboutPage: React.FC = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <About />
+      <SkillsCloud />
     </motion.div>
   );
 };
 
-export default AboutPage;
+export default SkillsPage;
